@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoking vs Diagnoses Analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .finding { background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Smoking vs Diagnoses Analysis</h1>
+    
+    <div class="finding">
+        <strong>Key Finding:</strong> Smokers (Every Day) have higher rates of lung-related diagnoses and nicotine dependence. Former smokers show similar back pain patterns but more pulmonary issues than never-smokers.
+    </div>
+
+    <div class="chart">
+        <h2>Diagnosis Rate by Smoking Status</h2>
+        <div id="diagRateChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Top Diagnoses: Never Smoker vs Current Smoker</h2>
+        <div id="compareChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Encounters by Smoking Status</h2>
+        <div id="encounterChart"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Diagnosis rate by smoking status
+        Plotly.newPlot('diagRateChart', [{
+            x: ['Passive Smoke', 'Some Days', 'Heavy Smoker', 'Every Day', 'Never Smoker', 'Light Smoker', 'Former'],
+            y: [83.4, 79.2, 78.3, 77.5, 75.7, 74.6, 72.2],
+            type: 'bar',
+            marker: {color: ['#28a745', '#ffc107', '#dc3545', '#dc3545', '#007bff', '#ff7f0e', '#ff7f0e']}
+        }], {
+            title: '% of Encounters with Diagnosis',
+            margin: {t: 50, b: 100},
+            yaxis: {title: 'Percentage'}
+        });
+
+        // Compare top diagnoses
+        Plotly.newPlot('compareChart', [
+            {
+                x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dependence', 'Pulmonary Nodule'],
+                y: [10636, 6511, 4768, 152, 319],
+                name: 'Never Smoker',
+                type: 'bar',
+                marker: {color: '#007bff'}
+            },
+            {
+                x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dependence', 'Pulmonary Nodule'],
+                y: [2262, 596, 553, 3444, 1078],
+                name: 'Every Day Smoker',
+                type: 'bar',
+                marker: {color: '#dc3545'}
+            }
+        ], {
+            title: 'Top 5 Diagnoses Comparison',
+            barmode: 'group',
+            margin: {t: 50, b: 100}
+        });
+
+        // Encounter counts by smoking status
+        Plotly.newPlot('encounterChart', [{
+            labels: ['Never Smoker', 'Former', 'Every Day', 'Never Assessed', 'Some Days', '*Unknown', 'Light Smoker', 'Unknown', 'Passive Smoke', 'Heavy Smoker'],
+            values: [306326, 219522, 61283, 27856, 11796, 5384, 1297, 716, 1000, 359],
+            type: 'pie',
+            marker: {colors: ['#007bff', '#ff7f0e', '#dc3545', '#6c757d', '#ffc107', '#6c757d', '#ff7f0e', '#6c757d', '#28a745', '#dc3545']}
+        }], {
+            title: 'Encounters by Smoking Status',
+            margin: {t: 30}
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demographics vs Test Occurrences</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .finding { background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Demographics vs Test Occurrences</h1>
+    <p style="text-align:center;">Which demographic groups receive more tests?</p>
+
+    <div class="finding">
+        <strong>Key Findings:</strong>
+        <ul>
+            <li><strong>Older patients</strong> receive significantly more tests (avg 8.9 for <1940 vs 2.7 for 1990s)</li>
+            <li><strong>Males</strong> receive more tests than females (8.2 vs 7.3 avg)</li>
+            <li><strong>Heavy smokers</strong> have highest test frequency (9.2 avg)</li>
+            <li><strong>Widowed patients</strong> receive most tests (8.6 avg)</li>
+            <li><strong>American Indian</strong> patients receive most tests by race (6.2 avg)</li>
+        </ul>
+    </div>
+
+    <div class="chart">
+        <h2>Average Tests by Age Group</h2>
+        <div id="ageChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Average Tests by Sex</h2>
+        <div id="sexChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Average Tests by Smoking Status</h2>
+        <div id="smokingChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Average Tests by Race</h2>
+        <div id="raceChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Average Tests by Marital Status</h2>
+        <div id="maritalChart"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Age
+        Plotly.newPlot('ageChart', [{
+            x: ['<1940', '1940s', '1950s', '1960s', '1970s', '1980s', '1990s', '2000+'],
+            y: [8.89, 8.86, 7.00, 5.21, 4.29, 3.44, 2.74, 3.25],
+            type: 'bar',
+            marker: {color: '#007bff'}
+        }], {
+            title: 'Average Tests per Patient by Age',
+            margin: {t: 50, b: 50},
+            yaxis: {title: 'Average # of Tests'}
+        });
+
+        // Sex
+        Plotly.newPlot('sexChart', [{
+            x: ['Male', 'Female', '*Unspecified'],
+            y: [8.24, 7.30, 5.00],
+            type: 'bar',
+            marker: {color: ['#007bff', '#e83e8c', '#6c757d']}
+        }], {
+            title: 'Average Tests per Patient by Sex',
+            margin: {t: 50, b: 50},
+            yaxis: {title: 'Average # of Tests'}
+        });
+
+        // Smoking
+        Plotly.newPlot('smokingChart', [{
+            x: ['Heavy Smoker', 'Former', 'Some Days', 'Every Day', 'Light Smoker', 'Never Smoker', 'Never Assessed'],
+            y: [9.21, 7.54, 6.23, 6.02, 5.29, 5.14, 4.05],
+            type: 'bar',
+            marker: {color: ['#dc3545', '#ffc107', '#dc3545', '#dc3545', '#ffc107', '#28a745', '#6c757d']}
+        }], {
+            title: 'Average Tests per Patient by Smoking Status',
+            margin: {t: 50, b: 100},
+            xaxis: {tickangle: 45},
+            yaxis: {title: 'Average # of Tests'}
+        });
+
+        // Race
+        Plotly.newPlot('raceChart', [{
+            x: ['American Indian', 'White', 'Black', 'Asian', 'Hispanic', 'Native Hawaiian', 'Other', 'Unknown'],
+            y: [6.15, 6.05, 4.97, 4.72, 4.01, 3.54, 3.47, 1.89],
+            type: 'bar',
+            marker: {color: '#28a745'}
+        }], {
+            title: 'Average Tests per Patient by Race',
+            margin: {t: 50, b: 100},
+            xaxis: {tickangle: 45},
+            yaxis: {title: 'Average # of Tests'}
+        });
+
+        // Marital
+        Plotly.newPlot('maritalChart', [{
+            x: ['Widowed', 'Life Partner', 'Divorced', 'Married', 'Single', 'Unknown'],
+            y: [8.55, 7.52, 7.32, 6.19, 4.09, 2.56],
+            type: 'bar',
+            marker: {color: '#e83e8c'}
+        }], {
+            title: 'Average Tests per Patient by Marital Status',
+            margin: {t: 50, b: 50},
+            yaxis: {title: 'Average # of Tests'}
+        });
+    </script>
+</body>
+</html>

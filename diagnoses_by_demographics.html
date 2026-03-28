@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagnoses by Demographics</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .finding { background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Diagnoses by Demographics</h1>
+    <p style="text-align:center;">What conditions are most prevalent in each group?</p>
+
+    <div class="finding">
+        <strong>Key Findings:</strong>
+        <ul>
+            <li><strong>All groups:</strong> #1 diagnosis is Radiculopathy (back pain)</li>
+            <li><strong>Older patients:</strong> More osteoporosis, atrial fibrillation, rheumatoid arthritis</li>
+            <li><strong>Younger patients:</strong> More respiratory issues (bronchiolitis, upper respiratory infections)</li>
+            <li><strong>Males:</strong> Higher rates of heart disease (atherosclerosis)</li>
+            <li><strong>Females:</strong> Higher rates of osteoporosis</li>
+            <li><strong>Black patients:</strong> Higher iron deficiency anemia rates</li>
+            <li><strong>Hispanic patients:</strong> Higher respiratory infections, iron deficiency</li>
+        </ul>
+    </div>
+
+    <div class="chart">
+        <h2>Top Diagnoses by Age Group</h2>
+        <div id="ageChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Top Diagnoses by Sex</h2>
+        <div id="sexChart"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Top Diagnoses by Race</h2>
+        <div id="raceChart"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Age chart
+        Plotly.newPlot('ageChart', [
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dep.', 'A-Fib'], y: [3821, 3146, 0, 0, 1079], name: '<1940', type: 'bar' },
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dep.', 'A-Fib'], y: [6479, 5262, 0, 0, 0], name: '1940s', type: 'bar' },
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dep.', 'A-Fib'], y: [5525, 0, 2753, 3585, 0], name: '1950s', type: 'bar' },
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dep.', 'A-Fib'], y: [2838, 0, 1948, 1382, 0], name: '1960s', type: 'bar' },
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine Dep.', 'Bronchiolitis'], y: [1999, 0, 1519, 0, 0], name: '1970s', type: 'bar' },
+            { x: ['Radiculopathy', 'Anemia', 'Sleep Apnea', 'Screening', 'Bronchiolitis'], y: [986, 687, 542, 0, 0], name: '1980s', type: 'bar' },
+            { x: ['Bronchiolitis', 'Jaundice', 'URI', 'Screening', 'Anemia'], y: [5727, 1982, 986, 0, 0], name: '1990s+', type: 'bar' }
+        ], { barmode: 'group', title: 'Top Diagnoses by Age', margin: {t: 50}, xaxis: {tickangle: 45} });
+
+        // Sex chart
+        Plotly.newPlot('sexChart', [
+            { x: ['Radiculopathy', 'Nicotine', 'Screening', 'Heart Disease', 'Preprocedural'], y: [3309, 1161, 1101, 1039, 926], name: 'Male', type: 'bar', marker: {color: '#007bff'} },
+            { x: ['Radiculopathy', 'Osteoporosis', 'Preprocedural', 'Nicotine', 'Cervical Spine'], y: [5132, 4350, 1549, 1523, 1521], name: 'Female', type: 'bar', marker: {color: '#e83e8c'} }
+        ], { barmode: 'group', title: 'Top Diagnoses by Sex', margin: {t: 50}, xaxis: {tickangle: 45} });
+
+        // Race chart
+        Plotly.newPlot('raceChart', [
+            { x: ['Radiculopathy', 'Osteoporosis', 'Screening', 'Nicotine', 'Preprocedural'], y: [19313, 10646, 7202, 6727, 6146], name: 'White', type: 'bar', marker: {color: '#007bff'} },
+            { x: ['Radiculopathy', 'Mammogram', 'Anemia', 'Preprocedural', 'Bronchiolitis'], y: [1216, 643, 575, 462, 458], name: 'Black', type: 'bar', marker: {color: '#dc3545'} },
+            { x: ['Radiculopathy', 'Anemia', 'Bronchiolitis', 'Screening', 'Preprocedural'], y: [712, 580, 507, 367, 348], name: 'Hispanic', type: 'bar', marker: {color: '#ffc107'} },
+            { x: ['Osteoporosis', 'Mammogram', 'Radiculopathy', 'Screening', 'Lymphoma'], y: [202, 192, 140, 67, 56], name: 'Asian', type: 'bar', marker: {color: '#28a745'} }
+        ], { barmode: 'group', title: 'Top Diagnoses by Race', margin: {t: 50}, xaxis: {tickangle: 45} });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeated Tests Analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .finding { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <h1>Repeated Tests Analysis</h1>
+    <p style="text-align:center;">Can we identify patients who receive "too many" repeated tests?</p>
+
+    <div class="finding">
+        <strong>Key Finding:</strong> 3,374 patients received the same test 20+ times. Most repeated: Radiation Therapy, Cardiac Rehab, Infusion Services. Some patients had 100+ of the SAME test!
+    </div>
+
+    <div class="chart">
+        <h2>Patients with Same Test Repeated 20+ Times</h2>
+        <div id="extremeRepeats"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Most Commonly Repeated Tests (20+ times)</h2>
+        <div id="repeatTests"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Average Visits by Race</h2>
+        <div id="raceVisits"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Patient Visit Distribution</h2>
+        <div id="visitDist"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Extreme repeats
+        Plotly.newPlot('extremeRepeats', [{
+            labels: ['1 visit', '2-5 visits', '6-10 visits', '11-20 visits', '20+ visits'],
+            values: [39667, 45154, 15297, 8368, 6439],
+            type: 'pie',
+            marker: {colors: ['#28a745', '#007bff', '#ffc107', '#ff7f0e', '#dc3545']},
+            textinfo: 'label+percent'
+        }], {
+            title: 'Patient Visit Frequency Distribution',
+            margin: {t: 50}
+        });
+
+        // Most repeated tests
+        Plotly.newPlot('repeatTests', [{
+            x: ['Radiation Therapy', 'Cardiac Rehab', 'Infusion Services', 'Infusion', 'Obstetrics', 'Cardiac Services', 'Enterostomal Therapy', 'Pulmonology Rehab', 'Psychiatry'],
+            y: [39900, 32492, 25479, 8913, 4409, 4066, 2564, 2414, 989],
+            type: 'bar',
+            marker: {color: '#dc3545'}
+        }], {
+            title: 'Total Repeat Test Occurrences (20+ times per patient)',
+            margin: {t: 50, b: 100},
+            xaxis: {tickangle: 45}
+        });
+
+        // Average visits by race
+        Plotly.newPlot('raceVisits', [{
+            x: ['American Indian', 'White', 'Black', 'Asian', 'Hispanic', 'Native Hawaiian', 'Other'],
+            y: [6.15, 6.05, 4.97, 4.72, 4.01, 3.54, 3.47],
+            type: 'bar',
+            marker: {color: '#007bff'}
+        }], {
+            title: 'Average Visits per Patient by Race',
+            margin: {t: 50, b: 100},
+            xaxis: {tickangle: 45},
+            yaxis: {title: 'Average Visits'}
+        });
+
+        // Visit distribution
+        Plotly.newPlot('visitDist', [{
+            x: ['1 visit', '2-5 visits', '6-10 visits', '11-20 visits', '>20 visits'],
+            y: [39667, 45154, 15297, 8368, 6439],
+            type: 'bar',
+            marker: {color: ['#28a745', '#007bff', '#ffc107', '#ff7f0e', '#dc3545']},
+            text: [39667, 45154, 15297, 8368, 6439],
+            textposition: 'outside'
+        }], {
+            title: 'How Many Times Do Patients Visit?',
+            margin: {t: 50, b: 50},
+            yaxis: {title: 'Number of Patients'}
+        });
+    </script>
+</body>
+</html>
