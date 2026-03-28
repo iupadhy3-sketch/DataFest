@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Journey Analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-top: 30px; }
+        h3 { color: #666; margin-top: 20px; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .question { background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .stat-box { background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .stat-value { font-size: 24px; font-weight: bold; color: #007bff; }
+        .stat-label { font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Patient Journey Analysis</h1>
+    <p style="text-align:center;color:#666;">Analysis of healthcare encounters to understand patient journeys</p>
+
+    <div class="question">
+        <strong>Q: Do patients experience long gaps between diagnosis and future appointments?</strong>
+    </div>
+    <div class="chart">
+        <h3>Time Between Consecutive Visits</h3>
+        <div id="gapChart"></div>
+        <div class="stats-grid">
+            <div class="stat-box"><div class="stat-value">71 days</div><div class="stat-label">Average Gap</div></div>
+            <div class="stat-box"><div class="stat-value">9 days</div><div class="stat-label">Median Gap</div></div>
+            <div class="stat-box"><div class="stat-value">66.5%</div><div class="stat-label">Return within 30 days</div></div>
+            <div class="stat-box"><div class="stat-value">20.1%</div><div class="stat-label">Gap > 90 days</div></div>
+        </div>
+    </div>
+
+    <div class="question">
+        <strong>Q: Does journey type vary by illness or care sought?</strong>
+    </div>
+    <div class="chart">
+        <h3>Top Visit Types (Procedures/Tests)</h3>
+        <div id="visitTypeChart"></div>
+    </div>
+
+    <div class="chart">
+        <h3>Encounters by Department Type</h3>
+        <div id="deptChart"></div>
+    </div>
+
+    <div class="question">
+        <strong>Q: Do different patient communities have different "typical" journeys?</strong>
+    </div>
+    <div class="chart">
+        <h3>Encounters by Patient Race</h3>
+        <div id="raceChart"></div>
+    </div>
+
+    <div class="chart">
+        <h3>Encounters by Sex</h3>
+        <div id="sexChart"></div>
+    </div>
+
+    <div class="question">
+        <strong>Q: How many visits do patients have?</strong>
+    </div>
+    <div class="chart">
+        <h3>Patient Visit Frequency Distribution</h3>
+        <div id="visitFreqChart"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Gap between visits
+        Plotly.newPlot('gapChart', [{
+            labels: ['≤30 days', '31-90 days', '>90 days'],
+            values: [364516, 72994, 110293],
+            type: 'pie',
+            marker: {colors: ['#28a745', '#ffc107', '#dc3545']},
+            textinfo: 'label+percent',
+            hole: 0.4
+        }], {
+            margin: {t: 30},
+            annotations: [{text: 'Gap Between Visits', x: 0.5, y: 0.5, font: {size: 14}, showarrow: false}]
+        });
+
+        // Visit Types
+        Plotly.newPlot('visitTypeChart', [{
+            x: ['CT Scan', 'Infusion Services', 'MRI', 'Radiation Therapy', 'Cardiac Rehab', 
+                'Pre Admission Testing', 'Fluoroscopy', 'Pain Management', 'ECG', 'Infusion'],
+            y: [69153, 66481, 59035, 43912, 36149, 34719, 34329, 30076, 29612, 26370],
+            type: 'bar',
+            marker: {color: '#007bff'}
+        }], {
+            margin: {t: 30, b: 100},
+            xaxis: {tickangle: 45}
+        });
+
+        // Department Types
+        Plotly.newPlot('deptChart', [{
+            x: ['HOD', 'OR', '*Unknown', 'ICU', 'L&D'],
+            y: [605058, 38692, 18545, 405, 33],
+            type: 'bar',
+            marker: {color: ['#007bff', '#ffc107', '#6c757d', '#dc3545', '#e83e8c']}
+        }], {
+            margin: {t: 30, b: 50}
+        });
+
+        // Race
+        Plotly.newPlot('raceChart', [{
+            x: ['White', 'Black', 'Hispanic', 'Other', 'American Indian', 'Asian', 'Patient Refused', 'Native Hawaiian'],
+            y: [538335, 40221, 30532, 8235, 7529, 4982, 2223, 878],
+            type: 'bar',
+            marker: {color: '#28a745'}
+        }], {
+            margin: {t: 30, b: 100},
+            xaxis: {tickangle: 45}
+        });
+
+        // Sex
+        Plotly.newPlot('sexChart', [{
+            labels: ['*Unspecified', 'Female', 'Male', 'Choose not to disclose', 'Unknown'],
+            values: [410553, 133019, 91791, 167, 39],
+            type: 'pie',
+            marker: {colors: ['#6c757d', '#e83e8c', '#007bff', '#ffc107', '#dc3545']},
+            textinfo: 'label+percent'
+        }], {
+            margin: {t: 30}
+        });
+
+        // Visit Frequency
+        Plotly.newPlot('visitFreqChart', [{
+            x: ['1 visit', '2-5 visits', '6-10 visits', '>10 visits'],
+            y: [39669, 45155, 15298, 14808],
+            type: 'bar',
+            marker: {color: ['#dc3545', '#ffc107', '#28a745', '#007bff']},
+            text: [39669, 45155, 15298, 14808],
+            textposition: 'outside'
+        }], {
+            margin: {t: 30, b: 50}
+        });
+    </script>
+</body>
+</html>
