@@ -1,0 +1,3363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valid Encounters</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { background: #28a745; color: white; padding: 20px; margin: -20px -20px 20px -20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 6px; font-size: 11px; }
+        th { background: #28a745; color: white; position: sticky; top: 0; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .info { background: #d4edda; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Valid Encounters</h1>
+    <div class="info">
+        <strong>Total Valid Rows:</strong> 681,984<br>
+        <strong>Showing:</strong> First 100 rows
+    </div>
+    <div style="overflow: auto; max-height: 90vh;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Date</th>
+      <th>AdmissionInstant</th>
+      <th>AdmitYear</th>
+      <th>AdmitMonth</th>
+      <th>AdmitDay</th>
+      <th>AdmitHour</th>
+      <th>AdmitMinute</th>
+      <th>AdmissionSource</th>
+      <th>AdmissionType</th>
+      <th>DischargeInstant</th>
+      <th>DischargeYear</th>
+      <th>DischargeMonth</th>
+      <th>DischargeDay</th>
+      <th>DischargeHour</th>
+      <th>DischargeMinute</th>
+      <th>EncounterKey</th>
+      <th>PatientDurableKey</th>
+      <th>Type</th>
+      <th>VisitType</th>
+      <th>VisitTypeDescription</th>
+      <th>ProviderDurableKey</th>
+      <th>AttendingProviderDurableKey</th>
+      <th>DischargeProviderDurableKey</th>
+      <th>DepartmentKey</th>
+      <th>PrimaryDiagnosisKey</th>
+      <th>IsEdVisit</th>
+      <th>IsHospitalAdmission</th>
+      <th>IsHospitalOutpatientVisit</th>
+      <th>IsInpatientAdmission</th>
+      <th>IsObservation</th>
+      <th>IsOutpatientFaceToFaceVisit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 08:08:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101410037</td>
+      <td>6353672</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>916853</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 08:12:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 09:39:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>39.0</td>
+      <td>101285651</td>
+      <td>5702329</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>165</td>
+      <td>854410</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 08:19:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>8.0</td>
+      <td>19.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 09:39:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>39.0</td>
+      <td>101485937</td>
+      <td>5517259</td>
+      <td>Hospital Encounter</td>
+      <td>LOVENOX</td>
+      <td>Cardiac Visits</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>165</td>
+      <td>859349</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 09:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101518955</td>
+      <td>7676591</td>
+      <td>Hospital Encounter</td>
+      <td>BFC PHONE</td>
+      <td>Clinic Visit- Virtual</td>
+      <td>6196</td>
+      <td>6196</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 09:38:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>38.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 08:36:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>36.0</td>
+      <td>101477133</td>
+      <td>8601013</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>165</td>
+      <td>857715</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 09:57:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>57.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101049169</td>
+      <td>5134070</td>
+      <td>Hospital Encounter</td>
+      <td>MRI CERVICAL SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>455817</td>
+      <td>455817</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>853559</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 09:57:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>57.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101062412</td>
+      <td>5134070</td>
+      <td>Hospital Encounter</td>
+      <td>MRI UPPER EXT JOINT WO VT</td>
+      <td>Magnetic Resonance</td>
+      <td>455817</td>
+      <td>455817</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>1554671</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101518915</td>
+      <td>7676580</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101518931</td>
+      <td>224797</td>
+      <td>Hospital Encounter</td>
+      <td>BFC PHONE</td>
+      <td>Clinic Visit- Virtual</td>
+      <td>235976</td>
+      <td>235976</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519049</td>
+      <td>85580</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>2985</td>
+      <td>2985</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 08:36:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>36.0</td>
+      <td>101342895</td>
+      <td>6002936</td>
+      <td>Hospital Encounter</td>
+      <td>ROCEPHIN</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>857917</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 10:04:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>4.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 08:36:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>36.0</td>
+      <td>101467725</td>
+      <td>6229224</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>907313</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 11:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 11:05:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>5.0</td>
+      <td>101086973</td>
+      <td>189265</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>1032</td>
+      <td>1032</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>860105</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 11:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519012</td>
+      <td>7676559</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 11:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519239</td>
+      <td>8732561</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6506</td>
+      <td>6506</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 11:06:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>6.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101096628</td>
+      <td>189265</td>
+      <td>Hospital Encounter</td>
+      <td>MRI THORACIC SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>1032</td>
+      <td>1032</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>1337571</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 11:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101518977</td>
+      <td>2881</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>94</td>
+      <td>94</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>1582663</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 12:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>12.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 18:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>18.0</td>
+      <td>59.0</td>
+      <td>101518203</td>
+      <td>7442750</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>857902</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 15:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>15.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519091</td>
+      <td>7519044</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>857902</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 19:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101516745</td>
+      <td>7442750</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 21:45:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>21.0</td>
+      <td>45.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519208</td>
+      <td>6957573</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>7014</td>
+      <td>7014</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>857902</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101372938</td>
+      <td>5569473</td>
+      <td>Hospital Encounter</td>
+      <td>ROCEPHIN</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>921091</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101406954</td>
+      <td>2928806</td>
+      <td>Hospital Encounter</td>
+      <td>LOVENOX</td>
+      <td>Cardiac Visits</td>
+      <td>6714</td>
+      <td>6714</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>906985</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101415724</td>
+      <td>773570</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>859262</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101484981</td>
+      <td>7657666</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>1550146</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101485115</td>
+      <td>192711</td>
+      <td>Hospital Encounter</td>
+      <td>ROCEPHIN</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>852600</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101498447</td>
+      <td>170031</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>668722</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101499187</td>
+      <td>5741806</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>1554415</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/01/22</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-01 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101520899</td>
+      <td>7676529</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 07:51:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>7.0</td>
+      <td>51.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>54.0</td>
+      <td>101497124</td>
+      <td>6227946</td>
+      <td>Hospital Encounter</td>
+      <td>ET WC 30</td>
+      <td>Enterostomal Therapy</td>
+      <td>17490</td>
+      <td>17490</td>
+      <td>17490</td>
+      <td>165</td>
+      <td>858409</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 07:56:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>7.0</td>
+      <td>56.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101276812</td>
+      <td>6561533</td>
+      <td>Hospital Encounter</td>
+      <td>MRI UPPER EXT JOINT WO VT</td>
+      <td>Magnetic Resonance</td>
+      <td>26</td>
+      <td>26</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>906462</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:21:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>21.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101315845</td>
+      <td>157537</td>
+      <td>Hospital Encounter</td>
+      <td>MRI PELVIS WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>400</td>
+      <td>400</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>1582663</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:21:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>21.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101317919</td>
+      <td>157537</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>400</td>
+      <td>400</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>136764</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:25:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>25.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:52:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>52.0</td>
+      <td>101498538</td>
+      <td>5517259</td>
+      <td>Hospital Encounter</td>
+      <td>LOVENOX</td>
+      <td>Cardiac Visits</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>165</td>
+      <td>1553979</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:35:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>35.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:53:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>53.0</td>
+      <td>101521006</td>
+      <td>5577778</td>
+      <td>Hospital Encounter</td>
+      <td>ET WC 30</td>
+      <td>Enterostomal Therapy</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>165</td>
+      <td>919139</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:44:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>44.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101319400</td>
+      <td>341377</td>
+      <td>Hospital Encounter</td>
+      <td>MRI ANGIO HEAD WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>18917</td>
+      <td>18917</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>1571055</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:44:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>44.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101316403</td>
+      <td>341377</td>
+      <td>Hospital Encounter</td>
+      <td>MRI BRAIN WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>18917</td>
+      <td>18917</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>675414</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 08:45:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>45.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 20:06:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>20.0</td>
+      <td>6.0</td>
+      <td>101519389</td>
+      <td>7519044</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>1321617</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:13:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>13.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521192</td>
+      <td>7675107</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:14:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>14.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521419</td>
+      <td>161499</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>2992</td>
+      <td>2992</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:23:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>23.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101304874</td>
+      <td>6475077</td>
+      <td>Hospital Encounter</td>
+      <td>MRI BRAIN WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>1090</td>
+      <td>1090</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>854471</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:24:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>24.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:52:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>52.0</td>
+      <td>101502476</td>
+      <td>170031</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>310216</td>
+      <td>165</td>
+      <td>921368</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101517222</td>
+      <td>7675125</td>
+      <td>Hospital Encounter</td>
+      <td>REPEAT LABWORK</td>
+      <td>Laboratory Draw</td>
+      <td>32373</td>
+      <td>32373</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>858150</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:35:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>35.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101340318</td>
+      <td>202927</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>337093</td>
+      <td>337093</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>866149</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:37:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>37.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:52:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>52.0</td>
+      <td>101416501</td>
+      <td>6353672</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>372139</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:49:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>49.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101516978</td>
+      <td>7673547</td>
+      <td>Hospital Encounter</td>
+      <td>REPEAT LABWORK</td>
+      <td>Laboratory Draw</td>
+      <td>32373</td>
+      <td>32373</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>858150</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:52:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>52.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>54.0</td>
+      <td>101467992</td>
+      <td>8601013</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>165</td>
+      <td>1554422</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:53:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>53.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>54.0</td>
+      <td>101345120</td>
+      <td>6002936</td>
+      <td>Hospital Encounter</td>
+      <td>ROCEPHIN</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>390278</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 09:57:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>9.0</td>
+      <td>57.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>54.0</td>
+      <td>101411376</td>
+      <td>773570</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>921078</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 21:29:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>21.0</td>
+      <td>29.0</td>
+      <td>101520942</td>
+      <td>7578956</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6196</td>
+      <td>6196</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>857902</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101319215</td>
+      <td>139477</td>
+      <td>Hospital Encounter</td>
+      <td>MRI PELVIS WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>400</td>
+      <td>400</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>906460</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:07:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>7.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:53:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>53.0</td>
+      <td>101406367</td>
+      <td>2928806</td>
+      <td>Hospital Encounter</td>
+      <td>LOVENOX</td>
+      <td>Cardiac Visits</td>
+      <td>6714</td>
+      <td>6714</td>
+      <td>6714</td>
+      <td>165</td>
+      <td>930514</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:09:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101305113</td>
+      <td>8920683</td>
+      <td>Hospital Encounter</td>
+      <td>MRI FOOT WO VT</td>
+      <td>Magnetic Resonance</td>
+      <td>7053</td>
+      <td>7053</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>852093</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:17:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>17.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 12:53:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>53.0</td>
+      <td>101466136</td>
+      <td>6229224</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>165</td>
+      <td>517722</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:27:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>27.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101339969</td>
+      <td>5947887</td>
+      <td>Hospital Encounter</td>
+      <td>MRI UPPER EXT JOINT WO VT</td>
+      <td>Magnetic Resonance</td>
+      <td>318058</td>
+      <td>318058</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>906465</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101515735</td>
+      <td>7588409</td>
+      <td>Hospital Encounter</td>
+      <td>BFC CLINIC</td>
+      <td>Clinic Visit- In Person</td>
+      <td>32373</td>
+      <td>32373</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521186</td>
+      <td>7676591</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521262</td>
+      <td>5835419</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>235976</td>
+      <td>235976</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 10:36:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>10.0</td>
+      <td>36.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101340677</td>
+      <td>6401923</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>2486</td>
+      <td>2486</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>858825</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519319</td>
+      <td>7673549</td>
+      <td>Hospital Encounter</td>
+      <td>BFC CLINIC</td>
+      <td>Clinic Visit- In Person</td>
+      <td>32374</td>
+      <td>32374</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:10:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>10.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101305302</td>
+      <td>12864</td>
+      <td>Hospital Encounter</td>
+      <td>MRI THORACIC SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>2486</td>
+      <td>2486</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>858837</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:10:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>10.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101315592</td>
+      <td>12864</td>
+      <td>Hospital Encounter</td>
+      <td>MRI CERVICAL SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>2486</td>
+      <td>2486</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>802784</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:15:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521220</td>
+      <td>7677849</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>337832</td>
+      <td>337832</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>908523</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519328</td>
+      <td>7676559</td>
+      <td>Hospital Encounter</td>
+      <td>BFC CLINIC</td>
+      <td>Clinic Visit- In Person</td>
+      <td>1131</td>
+      <td>1131</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521241</td>
+      <td>7677884</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>321518</td>
+      <td>321518</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>907148</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521467</td>
+      <td>476553</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>2979</td>
+      <td>2979</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 11:35:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>35.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521117</td>
+      <td>8732561</td>
+      <td>Hospital Encounter</td>
+      <td>BFC CLINIC</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6506</td>
+      <td>6506</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519276</td>
+      <td>7675040</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>1131</td>
+      <td>1131</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519290</td>
+      <td>224797</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>235976</td>
+      <td>235976</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:13:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>13.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101498478</td>
+      <td>192711</td>
+      <td>Hospital Encounter</td>
+      <td>ANTIBIOTIC INFUSION</td>
+      <td>Infusion</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>852600</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:23:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>23.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101339898</td>
+      <td>6289509</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LUMBAR SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>32460</td>
+      <td>32460</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>858825</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101305170</td>
+      <td>6621812</td>
+      <td>Hospital Encounter</td>
+      <td>MRI BRAIN WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>1089</td>
+      <td>1089</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>857950</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521390</td>
+      <td>6870307</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>2984</td>
+      <td>2984</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>30.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521427</td>
+      <td>7679209</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>907148</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 12:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>12.0</td>
+      <td>30.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 18:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>18.0</td>
+      <td>59.0</td>
+      <td>101519341</td>
+      <td>7442750</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>1321617</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 13:11:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>13.0</td>
+      <td>11.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101340589</td>
+      <td>5616585</td>
+      <td>Hospital Encounter</td>
+      <td>MRI THORACIC SPINE WO CONTRAST VT</td>
+      <td>Magnetic Resonance</td>
+      <td>1105</td>
+      <td>1105</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>853561</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 13:45:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>13.0</td>
+      <td>45.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521082</td>
+      <td>7193013</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>32374</td>
+      <td>32374</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>1566146</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 14:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>14.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101515047</td>
+      <td>7560349</td>
+      <td>Hospital Encounter</td>
+      <td>NURSE VISIT</td>
+      <td>Clinic Visits- In Person</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>928342</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 14:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>14.0</td>
+      <td>0.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521046</td>
+      <td>268144</td>
+      <td>Hospital Encounter</td>
+      <td>BFC PHONE</td>
+      <td>Clinic Visit- Virtual</td>
+      <td>2985</td>
+      <td>2985</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 14:47:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>14.0</td>
+      <td>47.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101339854</td>
+      <td>56266</td>
+      <td>Hospital Encounter</td>
+      <td>MRI LOW EXT JOINT WO VT</td>
+      <td>Magnetic Resonance</td>
+      <td>18778</td>
+      <td>18778</td>
+      <td>-1</td>
+      <td>58</td>
+      <td>925496</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 16:15:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>16.0</td>
+      <td>15.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521695</td>
+      <td>6957573</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>7014</td>
+      <td>7014</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 19:00:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519330</td>
+      <td>7442750</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 20:07:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>20.0</td>
+      <td>7.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101519360</td>
+      <td>7519044</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 21:30:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>21.0</td>
+      <td>30.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521659</td>
+      <td>7578956</td>
+      <td>Hospital Encounter</td>
+      <td>OBC</td>
+      <td>Obstetrics</td>
+      <td>6196</td>
+      <td>6196</td>
+      <td>-1</td>
+      <td>30</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101373667</td>
+      <td>5569473</td>
+      <td>Hospital Encounter</td>
+      <td>ROCEPHIN</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>664007</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101494807</td>
+      <td>5741806</td>
+      <td>Hospital Encounter</td>
+      <td>CUBICIN</td>
+      <td>Infusion</td>
+      <td>18299</td>
+      <td>18299</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>1554415</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101497046</td>
+      <td>7657666</td>
+      <td>Hospital Encounter</td>
+      <td>INVANZ</td>
+      <td>Infusion Services</td>
+      <td>26870</td>
+      <td>26870</td>
+      <td>-1</td>
+      <td>165</td>
+      <td>292948</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/02/22</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>Clinic/Physician Referral</td>
+      <td>Elective</td>
+      <td>2022-01-02 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101521830</td>
+      <td>7676521</td>
+      <td>Hospital Encounter</td>
+      <td>BFC FOLLOW UP</td>
+      <td>Clinic Visit- In Person</td>
+      <td>6854</td>
+      <td>6854</td>
+      <td>-1</td>
+      <td>50</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:07:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 13:55:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>13.0</td>
+      <td>55.0</td>
+      <td>100323656</td>
+      <td>7624474</td>
+      <td>Hospital Encounter</td>
+      <td>EP ABLATION SVT W/3D MAPPING VT</td>
+      <td>Electrophysiology</td>
+      <td>252736</td>
+      <td>252736</td>
+      <td>252736</td>
+      <td>21</td>
+      <td>854769</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:32:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>32.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 09:57:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>9.0</td>
+      <td>57.0</td>
+      <td>101460085</td>
+      <td>4178429</td>
+      <td>Hospital Encounter</td>
+      <td>SP OTHER IR VT</td>
+      <td>Vascular Imaging</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>6398</td>
+      <td>21</td>
+      <td>906610</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:53:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>53.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101423897</td>
+      <td>5034902</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>1469</td>
+      <td>1469</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>907133</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>54.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101439161</td>
+      <td>6369767</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>923407</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:54:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>54.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101497487</td>
+      <td>6813978</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>1211</td>
+      <td>1211</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>923407</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:55:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>55.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Elective</td>
+      <td>2022-01-03 07:22:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>22.0</td>
+      <td>101404008</td>
+      <td>3135022</td>
+      <td>Hospital Encounter</td>
+      <td>SACROILIAC JOINT INJECTION</td>
+      <td>Pain Management</td>
+      <td>2486</td>
+      <td>2486</td>
+      <td>-1</td>
+      <td>45</td>
+      <td>855419</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:58:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>58.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101498122</td>
+      <td>6465002</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>142138</td>
+      <td>142138</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>923407</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>100831091</td>
+      <td>8602800</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>1243</td>
+      <td>1243</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>906623</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 06:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>59.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101393786</td>
+      <td>2914769</td>
+      <td>Hospital Encounter</td>
+      <td>CR PHASE 2</td>
+      <td>Cardiac Rehab</td>
+      <td>1469</td>
+      <td>1469</td>
+      <td>-1</td>
+      <td>51</td>
+      <td>907133</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 07:01:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>1.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 07:21:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>21.0</td>
+      <td>101114217</td>
+      <td>5480607</td>
+      <td>Hospital Encounter</td>
+      <td>INFUSION LAB</td>
+      <td>Infusion Services</td>
+      <td>1091</td>
+      <td>1091</td>
+      <td>1091</td>
+      <td>165</td>
+      <td>856725</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 07:01:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>1.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 23:59:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>101240758</td>
+      <td>6686006</td>
+      <td>Hospital Encounter</td>
+      <td>ABLATION</td>
+      <td>Cardiac Services</td>
+      <td>1184</td>
+      <td>1184</td>
+      <td>-1</td>
+      <td>8873</td>
+      <td>856138</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>01/03/22</td>
+      <td>2022-01-03 07:02:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>Clinic or Physician's Office</td>
+      <td>Elective</td>
+      <td>2022-01-03 09:40:00</td>
+      <td>2022.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>9.0</td>
+      <td>40.0</td>
+      <td>100864014</td>
+      <td>2728500</td>
+      <td>Hospital Encounter</td>
+      <td>SV COLONOSCOPY W/ANESTHESIA</td>
+      <td>Hospital Visits- GI</td>
+      <td>78062</td>
+      <td>78062</td>
+      <td>78062</td>
+      <td>44</td>
+      <td>906978</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>

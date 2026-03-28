@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataFest Encounters Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-top: 40px; }
+        .summary { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .stat { display: inline-block; background: #007bff; color: white; padding: 15px 25px; margin: 5px; border-radius: 5px; text-align: center; }
+        .stat-label { font-size: 12px; opacity: 0.9; }
+        .stat-value { font-size: 28px; font-weight: bold; }
+        .stat.valid { background: #28a745; }
+        .stat.na { background: #dc3545; }
+        table { border-collapse: collapse; width: 100%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        th { background: #007bff; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f8f9fa; }
+        .section { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .note { background: #f8d7da; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #dc3545; }
+        .info { background: #d1ecf1; padding: 15px; border-radius: 5px; border-left: 4px solid #17a2b8; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>DataFest Encounters Report</h1>
+    
+    <div class="summary">
+        <h2 style="margin-top: 0;">Dataset Overview</h2>
+        <div class="stat">
+            <div class="stat-label">Total Rows</div>
+            <div class="stat-value">7,675,801</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Columns</div>
+            <div class="stat-value">31</div>
+        </div>
+        <div class="stat valid">
+            <div class="stat-label">Valid Rows (No N/A in ANY Column)</div>
+            <div class="stat-value">1,047,397</div>
+        </div>
+        <div class="stat na">
+            <div class="stat-label">Rows with N/A (at least one column)</div>
+            <div class="stat-value">6,628,404</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Columns with N/A Values</h2>
+        <table>
+            <tr><th>Column</th><th>N/A Count</th><th>Percentage</th></tr>
+            <tr><td>AdmissionInstant</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmitYear</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmitMonth</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmitDay</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmitHour</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmitMinute</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeInstant</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeYear</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeMonth</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeDay</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeHour</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>DischargeMinute</td><td>6,627,001</td><td>86.3%</td></tr>
+            <tr><td>AdmissionSource</td><td>1,400</td><td>0.02%</td></tr>
+            <tr><td>AdmissionType</td><td>1,086</td><td>0.01%</td></tr>
+        </table>
+
+        <div class="note">
+            <strong>Major Finding:</strong> 86.3% of rows (6,627,001) have NULL values in ALL admission/discharge date columns.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Valid Rows Breakdown (1,047,397 rows)</h2>
+        <p>Rows where NO column contains N/A, Not Applicable, or NULL.</p>
+        
+        <h3>By Admission Source</h3>
+        <table>
+            <tr><th>#</th><th>Admission Source</th><th>Count</th><th>Percentage</th></tr>
+            <tr><td>1</td><td>Clinic or Physician's Office</td><td>445,221</td><td>42.5%</td></tr>
+            <tr><td>2</td><td>Non-Health Care Facility Point of Origin</td><td>329,476</td><td>31.5%</td></tr>
+            <tr><td>3</td><td>Clinic/Physician Referral</td><td>242,939</td><td>23.2%</td></tr>
+            <tr><td>4</td><td>Home</td><td>23,039</td><td>2.2%</td></tr>
+            <tr><td>5</td><td>Transfer from a Hospital (Different Facility)</td><td>3,276</td><td>0.3%</td></tr>
+            <tr><td>6</td><td>Born Inside this Hospital</td><td>2,205</td><td>0.2%</td></tr>
+            <tr><td>7</td><td>Transfer from Another Health Care Facility</td><td>1,010</td><td>0.1%</td></tr>
+            <tr><td>8</td><td>Transfer from Skilled Nursing (SNF) or ICF</td><td>144</td><td>0.0%</td></tr>
+            <tr><td>9</td><td>Acute Care Hospital</td><td>87</td><td>0.0%</td></tr>
+            <tr><td>10</td><td>Other sources</td><td>&lt;100</td><td>0.0%</td></tr>
+        </table>
+
+        <h3>By Admission Type</h3>
+        <table>
+            <tr><th>#</th><th>Admission Type</th><th>Count</th><th>Percentage</th></tr>
+            <tr><td>1</td><td>Elective</td><td>814,975</td><td>77.8%</td></tr>
+            <tr><td>2</td><td>Emergency</td><td>193,401</td><td>18.5%</td></tr>
+            <tr><td>3</td><td>Urgent</td><td>27,999</td><td>2.7%</td></tr>
+            <tr><td>4</td><td>Newborn</td><td>7,178</td><td>0.7%</td></tr>
+            <tr><td>5</td><td>Trauma Center</td><td>2,485</td><td>0.2%</td></tr>
+            <tr><td>6</td><td>Information Not Available</td><td>1,266</td><td>0.1%</td></tr>
+            <tr><td>7</td><td>Disaster</td><td>7</td><td>0.0%</td></tr>
+            <tr><td>8</td><td>Court/Law Enforcement</td><td>59</td><td>0.0%</td></tr>
+            <tr><td>9</td><td>Born Outside of this Hospital</td><td>27</td><td>0.0%</td></tr>
+        </table>
+
+        <div class="info">
+            <strong>Summary:</strong> After filtering out rows with ANY N/A value, we have <strong>1,047,397 clean rows</strong> for analysis. The top admission sources are Clinic/Physician's Office (42.5%) and Non-Health Care Facility (31.5%). The top admission type is Elective (77.8%).
+        </div>
+    </div>
+</body>
+</html>

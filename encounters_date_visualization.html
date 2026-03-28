@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encounters Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .chart-container { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .stats { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0; }
+        .stat-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; min-width: 150px; }
+        .stat-value { font-size: 32px; font-weight: bold; color: #007bff; }
+        .stat-label { font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Encounters Visualization</h1>
+    
+    <div class="stats">
+        <div class="stat-box">
+            <div class="stat-value">681,984</div>
+            <div class="stat-label">Total Encounters</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">48</div>
+            <div class="stat-label">Total Months</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">21</div>
+            <div class="stat-label">Admission Sources</div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Encounters by Year</h2>
+        <canvas id="yearChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Encounters by Month (Bar + Line)</h2>
+        <canvas id="monthChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Encounters by Admission Source</h2>
+        <canvas id="sourceChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Encounters by Admission Type</h2>
+        <canvas id="typeChart"></canvas>
+    </div>
+
+    <script>
+        new Chart(document.getElementById('yearChart'), {
+            type: 'bar',
+            data: {
+                labels: ["2022", "2023", "2024", "2025"],
+                datasets: [{ label: 'Encounters', data: [137654, 168387, 184049, 191894], backgroundColor: '#007bff' }]
+            },
+            options: { responsive: true, plugins: { legend: { display: false } } }
+        });
+
+        new Chart(document.getElementById('monthChart'), {
+            type: 'bar',
+            data: {
+                labels: ["2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"],
+                datasets: [
+                    { type: 'bar', label: 'Encounters', data: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11644, 11296, 12459, 12048, 13665, 12741, 14492, 13170, 14395, 14723, 13180, 15236, 13699, 15082, 14149, 13855, 14528, 14709, 15247, 15861, 15886, 13865, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14570, 15974, 16707, 15674, 15813, 16335, 15777, 16163, 18081, 14826, 16442], backgroundColor: 'rgba(40, 167, 69, 0.7)', borderColor: '#28a745', borderWidth: 1 },
+                    { type: 'line', label: 'Trend', data: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11644, 11296, 12459, 12048, 13665, 12741, 14492, 13170, 14395, 14723, 13180, 15236, 13699, 15082, 14149, 13855, 14528, 14709, 15247, 15861, 15886, 13865, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14570, 15974, 16707, 15674, 15813, 16335, 15777, 16163, 18081, 14826, 16442], borderColor: '#dc3545', backgroundColor: 'transparent', borderWidth: 2, tension: 0.3, pointRadius: 3 }
+                ]
+            },
+            options: { responsive: true }
+        });
+
+        new Chart(document.getElementById('sourceChart'), {
+            type: 'bar',
+            data: {
+                labels: ["Clinic or Physician's Office (63.9%)", "Clinic/Physician Referral (34.9%)", "Non-Health Care Facility Point of O (0.7%)", "Home (0.5%)", "Born Inside this Hospital (0.0%)", "Acute Care Hospital (0.0%)", "Transfer from Another Health Care F (0.0%)", "Transfer from a Hospital (Different (0.0%)", "Court/Law Enforcement (0.0%)", "Transfer from Skilled Nursing (SNF) (0.0%)", "Another Health Care Institution Not (0.0%)", "Correctional Facility (0.0%)", "Home w/ self care, independent livi (0.0%)", "ER VISIT FROM HOME (0.0%)", "Born Outside this Hospital (0.0%)", "Born Outside of this Hospital (0.0%)", "Ambulatory Surgery Center (0.0%)", "Home with parent or caregiver (0.0%)", "Nursing Home/Long Term Care (0.0%)", "Transfer from One Distinct Unit to  (0.0%)", "Critical Access Hospital (0.0%)"],
+                datasets: [{ label: 'Count', data: [435497, 238154, 4502, 3703, 44, 20, 16, 11, 9, 6, 5, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1], backgroundColor: '#17a2b8' }]
+            },
+            options: { responsive: true, indexAxis: 'y', plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c) { return c.raw.toLocaleString() + ' (' + [63.9, 34.9, 0.7, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0][c.dataIndex] + '%)'; } } } } }
+        });
+
+        new Chart(document.getElementById('typeChart'), {
+            type: 'bar',
+            data: {
+                labels: ["Elective (99.9%)", "Newborn (0.0%)", "Urgent (0.0%)", "Emergency (0.0%)", "Information Not Available (0.0%)", "Disaster (0.0%)"],
+                datasets: [{ label: 'Count', data: [681554, 194, 131, 87, 15, 3], backgroundColor: '#ffc107' }]
+            },
+            options: { responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c) { return c.raw.toLocaleString() + ' (' + [99.9, 0.0, 0.0, 0.0, 0.0, 0.0][c.dataIndex] + '%)'; } } } } }
+        });
+    </script>
+</body>
+</html>

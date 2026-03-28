@@ -1,0 +1,11 @@
+# Large data files
+*.csv
+*.parquet
+*.pkl
+
+# Cache files
+.ipynb_checkpoints/
+.DS_Store
+
+# Output files
+output.txt
