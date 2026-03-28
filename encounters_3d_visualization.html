@@ -73,6 +73,26 @@
         </table>
     </div>
 
+    <div class="chart">
+        <h2>Admissions by Year/Month (3D Scatter)</h2>
+        <div id="admitScatter3d"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Admissions by Year/Month (Surface Plot)</h2>
+        <div id="admitSurface3d"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Discharges by Year/Month (3D Scatter)</h2>
+        <div id="dischargeScatter3d"></div>
+    </div>
+
+    <div class="chart">
+        <h2>Discharges by Year/Month (Surface Plot)</h2>
+        <div id="dischargeSurface3d"></div>
+    </div>
+
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <script>
         // Department Bar Chart
@@ -130,6 +150,114 @@
             textinfo: 'label+percent'
         }], {
             responsive: true,
+            margin: {t: 50}
+        });
+
+        // Admission Year/Month Data
+        var admitYears = [2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025];
+        var admitMonths = [1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12];
+        var admitCounts = [10769,9872,11890,11506,11381,11755,10853,12181,11642,11294,12458,12047,13664,12741,14492,13170,14393,14723,13180,15235,13699,15082,14148,13855,14528,14709,15247,15861,15886,13864,15038,15252,15371,17590,14890,15812,15532,14569,15974,16707,15674,15813,16334,15777,16163,18080,14826,16442];
+
+        // Admission 3D Scatter
+        Plotly.newPlot('admitScatter3d', [{
+            x: admitYears,
+            y: admitMonths,
+            z: admitCounts,
+            mode: 'markers',
+            marker: {
+                size: admitCounts.map(v => Math.sqrt(v) / 3),
+                color: admitCounts,
+                colorscale: 'Blues',
+                symbol: 'circle'
+            },
+            type: 'scatter3d',
+            text: admitCounts.map((c, i) => `${admitMonths[i]}/${admitYears[i]}: ${c} admissions`),
+            hoverinfo: 'text'
+        }], {
+            scene: {
+                xaxis: {title: 'Year'},
+                yaxis: {title: 'Month'},
+                zaxis: {title: 'Encounters'}
+            },
+            margin: {t: 50}
+        });
+
+        // Admission Surface Plot
+        var surfaceZ = [];
+        for (var y = 2022; y <= 2025; y++) {
+            var row = [];
+            for (var m = 1; m <= 12; m++) {
+                var idx = admitYears.indexOf(y) !== -1 ? admitYears.findIndex((yr, i) => yr === y && admitMonths[i] === m) : -1;
+                row.push(idx >= 0 ? admitCounts[idx] : 0);
+            }
+            surfaceZ.push(row);
+        }
+        Plotly.newPlot('admitSurface3d', [{
+            z: surfaceZ,
+            x: [1,2,3,4,5,6,7,8,9,10,11,12],
+            y: [2022,2023,2024,2025],
+            type: 'surface',
+            colorscale: 'Blues'
+        }], {
+            scene: {
+                xaxis: {title: 'Month'},
+                yaxis: {title: 'Year'},
+                zaxis: {title: 'Encounters'}
+            },
+            margin: {t: 50}
+        });
+
+        // Discharge Year/Month Data
+        var dischargeYears = [2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2022,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2023,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2024,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2026];
+        var dischargeMonths = [1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12,1];
+        var dischargeCounts = [10768,9871,11884,11510,11373,11760,10859,12175,11647,11294,12451,12056,13652,12743,14500,13171,14385,14732,13178,15230,13706,15073,14151,13861,14522,14709,15253,15855,15892,13862,15033,15258,15370,17588,14894,15811,15526,14575,15968,16706,15682,15804,16338,15780,16158,18083,14830,16440,2];
+
+        // Discharge 3D Scatter
+        Plotly.newPlot('dischargeScatter3d', [{
+            x: dischargeYears,
+            y: dischargeMonths,
+            z: dischargeCounts,
+            mode: 'markers',
+            marker: {
+                size: dischargeCounts.map(v => Math.sqrt(v) / 3),
+                color: dischargeCounts,
+                colorscale: 'Greens',
+                symbol: 'circle'
+            },
+            type: 'scatter3d',
+            text: dischargeCounts.map((c, i) => `${dischargeMonths[i]}/${dischargeYears[i]}: ${c} discharges`),
+            hoverinfo: 'text'
+        }], {
+            scene: {
+                xaxis: {title: 'Year'},
+                yaxis: {title: 'Month'},
+                zaxis: {title: 'Encounters'}
+            },
+            margin: {t: 50}
+        });
+
+        // Discharge Surface Plot
+        var dischargeSurfaceZ = [];
+        for (var y = 2022; y <= 2025; y++) {
+            var row = [];
+            for (var m = 1; m <= 12; m++) {
+                var idx = dischargeYears.findIndex((yr, i) => yr === y && dischargeMonths[i] === m);
+                row.push(idx >= 0 ? dischargeCounts[idx] : 0);
+            }
+            dischargeSurfaceZ.push(row);
+        }
+        Plotly.newPlot('dischargeSurface3d', [{
+            z: dischargeSurfaceZ,
+            x: [1,2,3,4,5,6,7,8,9,10,11,12],
+            y: [2022,2023,2024,2025],
+            type: 'surface',
+            colorscale: 'Greens'
+        }], {
+            scene: {
+                xaxis: {title: 'Month'},
+                yaxis: {title: 'Year'},
+                zaxis: {title: 'Encounters'}
+            },
             margin: {t: 50}
         });
     </script>
