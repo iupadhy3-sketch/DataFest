@@ -158,53 +158,66 @@
             margin: {t: 50}
         });
 
-        // Top Diagnoses by Year (3D) - separate traces per year with legend
-        var trace2022 = {
-            x: [2022,2022,2022,2022,2022],
-            y: [1,2,3,4,5],
-            z: [5354,2020,1834,1678,1566],
+        // Top Diagnoses by Year (3D) - separate traces per diagnosis with legend
+        var colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+        
+        var traceRadiculopathy = {
+            x: [2022,2023,2024,2025],
+            y: [1,1,1,1],
+            z: [5354,5615,5733,5830],
             mode: 'markers',
-            marker: { size: [5354,2020,1834,1678,1566].map(v => Math.sqrt(v) / 3), color: '#1f77b4' },
+            marker: { size: [5354,5615,5733,5830].map(v => Math.sqrt(v) / 3), color: colors[0] },
             type: 'scatter3d',
-            name: '2022',
-            text: ["Radiculopathy: 5354", "Osteoporosis: 2020", "Sleep apnea: 1834", "Nicotine: 1678", "ERRENC: 1566"],
+            name: 'Radiculopathy, lumbar',
+            text: ["2022: 5354", "2023: 5615", "2024: 5733", "2025: 5830"],
             hoverinfo: 'text+name'
         };
-        var trace2023 = {
-            x: [2023,2023,2023,2023,2023],
-            y: [1,2,3,4,5],
-            z: [5615,2602,1875,1819,1649],
+        var traceOsteoporosis = {
+            x: [2022,2023,2024,2025],
+            y: [2,2,2,2],
+            z: [2020,2602,3176,3983],
             mode: 'markers',
-            marker: { size: [5615,2602,1875,1819,1649].map(v => Math.sqrt(v) / 3), color: '#ff7f0e' },
+            marker: { size: [2020,2602,3176,3983].map(v => Math.sqrt(v) / 3), color: colors[1] },
             type: 'scatter3d',
-            name: '2023',
-            text: ["Radiculopathy: 5615", "Osteoporosis: 2602", "Nicotine: 1875", "Sleep apnea: 1819", "Bronchiolitis: 1649"],
+            name: 'Age-related osteoporosis',
+            text: ["2022: 2020", "2023: 2602", "2024: 3176", "2025: 3983"],
             hoverinfo: 'text+name'
         };
-        var trace2024 = {
-            x: [2024,2024,2024,2024,2024],
-            y: [1,2,3,4,5],
-            z: [5733,3176,2461,2084,1823],
+        var traceNicotine = {
+            x: [2022,2023,2024,2025],
+            y: [4,3,4,5],
+            z: [1566,1875,2084,2049],
             mode: 'markers',
-            marker: { size: [5733,3176,2461,2084,1823].map(v => Math.sqrt(v) / 3), color: '#2ca02c' },
+            marker: { size: [1566,1875,2084,2049].map(v => Math.sqrt(v) / 3), color: colors[2] },
             type: 'scatter3d',
-            name: '2024',
-            text: ["Radiculopathy: 5733", "Osteoporosis: 3176", "Preprocedural: 2461", "Nicotine: 2084", "Screening: 1823"],
+            name: 'Nicotine dependence',
+            text: ["2022: 1566", "2023: 1875", "2024: 2084", "2025: 2049"],
             hoverinfo: 'text+name'
         };
-        var trace2025 = {
-            x: [2025,2025,2025,2025,2025],
-            y: [1,2,3,4,5],
-            z: [5830,5790,3983,2287,2049],
+        var traceSleepApnea = {
+            x: [2022,2023],
+            y: [3,4],
+            z: [1834,1819],
             mode: 'markers',
-            marker: { size: [5830,5790,3983,2287,2049].map(v => Math.sqrt(v) / 3), color: '#d62728' },
+            marker: { size: [1834,1819].map(v => Math.sqrt(v) / 3), color: colors[3] },
             type: 'scatter3d',
-            name: '2025',
-            text: ["Radiculopathy: 5830", "Screening: 5790", "Osteoporosis: 3983", "Preprocedural: 2287", "Nicotine: 2049"],
+            name: 'Obstructive sleep apnea',
+            text: ["2022: 1834", "2023: 1819"],
+            hoverinfo: 'text+name'
+        };
+        var traceScreening = {
+            x: [2024,2025],
+            y: [5,2],
+            z: [1823,5790],
+            mode: 'markers',
+            marker: { size: [1823,5790].map(v => Math.sqrt(v) / 3), color: colors[4] },
+            type: 'scatter3d',
+            name: 'Screening malignant',
+            text: ["2024: 1823", "2025: 5790"],
             hoverinfo: 'text+name'
         };
 
-        Plotly.newPlot('diagByYear3d', [trace2022, trace2023, trace2024, trace2025], {
+        Plotly.newPlot('diagByYear3d', [traceRadiculopathy, traceOsteoporosis, traceNicotine, traceSleepApnea, traceScreening], {
             scene: {
                 xaxis: {title: 'Year'},
                 yaxis: {title: 'Diagnosis Rank'},
