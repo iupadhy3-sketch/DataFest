@@ -23,7 +23,7 @@
     
     <div class="stats">
         <div class="stat-box">
-            <div class="stat-value">681,969</div>
+            <div class="stat-value">662,733</div>
             <div class="stat-label">Total Encounters</div>
         </div>
         <div class="stat-box">
@@ -51,14 +51,19 @@
         <div id="deptDiagChart"></div>
     </div>
 
+    <div class="chart">
+        <h2>Top Diagnoses by Year (3D)</h2>
+        <div id="diagByYear3d"></div>
+    </div>
+
     <div class="diagram">
         <h2>Primary Diagnosis: -1 vs Other Values</h2>
         <p>PrimaryDiagnosisKey = -1 indicates no diagnosis was needed or given.</p>
         <div id="diagCompare"></div>
         <table style="margin-top: 20px;">
             <tr><th>Category</th><th>Count</th><th>Percentage</th></tr>
-            <tr><td><strong>PrimaryDiagnosisKey = -1</strong></td><td>181,128</td><td>26.6%</td></tr>
-            <tr style="background: #f9f9f9;"><td><strong>PrimaryDiagnosisKey != -1</strong></td><td>500,841</td><td>73.4%</td></tr>
+            <tr><td><strong>PrimaryDiagnosisKey = -1</strong></td><td>177,248</td><td>26.7%</td></tr>
+            <tr style="background: #f9f9f9;"><td><strong>PrimaryDiagnosisKey != -1</strong></td><td>485,485</td><td>73.3%</td></tr>
         </table>
     </div>
 
@@ -144,12 +149,47 @@
         // Diagnosis Comparison
         Plotly.newPlot('diagCompare', [{
             labels: ['PrimaryDiagnosisKey = -1', 'PrimaryDiagnosisKey != -1'],
-            values: [181128, 500841],
+            values: [177248, 485485],
             type: 'pie',
             marker: {colors: ['#dc3545', '#28a745']},
             textinfo: 'label+percent'
         }], {
             responsive: true,
+            margin: {t: 50}
+        });
+
+        // Top Diagnoses by Year (3D)
+        // Data: Year, Rank (1-5), Count
+        var diagYears = [2022,2022,2022,2022,2022, 2023,2023,2023,2023,2023, 2024,2024,2024,2024,2024, 2025,2025,2025,2025,2025];
+        var diagRanks = [1,2,3,4,5, 1,2,3,4,5, 1,2,3,4,5, 1,2,3,4,5];
+        var diagCounts = [5354,2020,1834,1678,1566, 5615,2602,1875,1819,1649, 5733,3176,2461,2084,1823, 5830,5790,3983,2287,2049];
+        var diagLabels = [
+            "Radiculopathy, lumbar", "Age-related osteoporosis", "Obstructive sleep apnea", "Nicotine dependence", "ERRENC",
+            "Radiculopathy, lumbar", "Age-related osteoporosis", "Nicotine dependence", "Obstructive sleep apnea", "Bronchiolitis",
+            "Radiculopathy, lumbar", "Age-related osteoporosis", "Preprocedural exam", "Nicotine dependence", "Screening malignant",
+            "Radiculopathy, lumbar", "Screening malignant", "Age-related osteoporosis", "Preprocedural exam", "Nicotine dependence"
+        ];
+
+        Plotly.newPlot('diagByYear3d', [{
+            x: diagYears,
+            y: diagRanks,
+            z: diagCounts,
+            mode: 'markers',
+            marker: {
+                size: diagCounts.map(v => Math.sqrt(v) / 3),
+                color: diagCounts,
+                colorscale: 'Viridis',
+                symbol: 'circle'
+            },
+            type: 'scatter3d',
+            text: diagLabels.map((l, i) => `${l} (${diagYears[i]}): ${diagCounts[i]}`),
+            hoverinfo: 'text'
+        }], {
+            scene: {
+                xaxis: {title: 'Year'},
+                yaxis: {title: 'Diagnosis Rank'},
+                zaxis: {title: 'Count'}
+            },
             margin: {t: 50}
         });
 
