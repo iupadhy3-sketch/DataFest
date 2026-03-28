@@ -25,92 +25,98 @@
             <div class="stat-value">4</div>
             <div class="stat-label">Years</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-value">21</div>
-            <div class="stat-label">Admission Sources</div>
-        </div>
     </div>
 
     <div class="chart">
-        <h2 style="text-align:center;">Encounters by Year and Month (3D Scatter)</h2>
-        <div id="scatter3d" style="width:100%;height:500px;"></div>
+        <h2 style="text-align:center;">Admission by Year and Month (3D Scatter)</h2>
+        <div id="admitScatter" style="width:100%;height:500px;"></div>
     </div>
 
     <div class="chart">
-        <h2 style="text-align:center;">Monthly Trends by Year (3D Surface)</h2>
-        <div id="surface3d" style="width:100%;height:500px;"></div>
+        <h2 style="text-align:center;">Admission Monthly Trends (3D Surface)</h2>
+        <div id="admitSurface" style="width:100%;height:500px;"></div>
+    </div>
+
+    <div class="chart">
+        <h2 style="text-align:center;">Discharge by Year and Month (3D Scatter)</h2>
+        <div id="dischargeScatter" style="width:100%;height:500px;"></div>
+    </div>
+
+    <div class="chart">
+        <h2 style="text-align:center;">Discharge Monthly Trends (3D Surface)</h2>
+        <div id="dischargeSurface" style="width:100%;height:500px;"></div>
     </div>
 
     <script>
-        // 3D Scatter Plot
-        var scatterData = [{
+        // Admission Scatter
+        var admitScatterData = [{
             x: [2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025],
             y: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
             z: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11642, 11294, 12458, 12047, 13664, 12741, 14492, 13170, 14393, 14723, 13180, 15235, 13699, 15082, 14148, 13855, 14528, 14709, 15247, 15861, 15886, 13864, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14569, 15974, 16707, 15674, 15813, 16334, 15777, 16163, 18080, 14826, 16442],
             mode: 'markers',
-            marker: {
-                size: 8,
-                color: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11642, 11294, 12458, 12047, 13664, 12741, 14492, 13170, 14393, 14723, 13180, 15235, 13699, 15082, 14148, 13855, 14528, 14709, 15247, 15861, 15886, 13864, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14569, 15974, 16707, 15674, 15813, 16334, 15777, 16163, 18080, 14826, 16442],
-                colorscale: 'Viridis',
-                opacity: 0.8
-            },
+            marker: {size: 8, color: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11642, 11294, 12458, 12047, 13664, 12741, 14492, 13170, 14393, 14723, 13180, 15235, 13699, 15082, 14148, 13855, 14528, 14709, 15247, 15861, 15886, 13864, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14569, 15974, 16707, 15674, 15813, 16334, 15777, 16163, 18080, 14826, 16442], colorscale: 'Viridis', opacity: 0.8},
             type: 'scatter3d',
             text: ["Year: 2022, Month: 1, Count: 10,769", "Year: 2022, Month: 2, Count: 9,872", "Year: 2022, Month: 3, Count: 11,890", "Year: 2022, Month: 4, Count: 11,506", "Year: 2022, Month: 5, Count: 11,381", "Year: 2022, Month: 6, Count: 11,755", "Year: 2022, Month: 7, Count: 10,853", "Year: 2022, Month: 8, Count: 12,181", "Year: 2022, Month: 9, Count: 11,642", "Year: 2022, Month: 10, Count: 11,294", "Year: 2022, Month: 11, Count: 12,458", "Year: 2022, Month: 12, Count: 12,047", "Year: 2023, Month: 1, Count: 13,664", "Year: 2023, Month: 2, Count: 12,741", "Year: 2023, Month: 3, Count: 14,492", "Year: 2023, Month: 4, Count: 13,170", "Year: 2023, Month: 5, Count: 14,393", "Year: 2023, Month: 6, Count: 14,723", "Year: 2023, Month: 7, Count: 13,180", "Year: 2023, Month: 8, Count: 15,235", "Year: 2023, Month: 9, Count: 13,699", "Year: 2023, Month: 10, Count: 15,082", "Year: 2023, Month: 11, Count: 14,148", "Year: 2023, Month: 12, Count: 13,855", "Year: 2024, Month: 1, Count: 14,528", "Year: 2024, Month: 2, Count: 14,709", "Year: 2024, Month: 3, Count: 15,247", "Year: 2024, Month: 4, Count: 15,861", "Year: 2024, Month: 5, Count: 15,886", "Year: 2024, Month: 6, Count: 13,864", "Year: 2024, Month: 7, Count: 15,038", "Year: 2024, Month: 8, Count: 15,252", "Year: 2024, Month: 9, Count: 15,371", "Year: 2024, Month: 10, Count: 17,590", "Year: 2024, Month: 11, Count: 14,890", "Year: 2024, Month: 12, Count: 15,812", "Year: 2025, Month: 1, Count: 15,532", "Year: 2025, Month: 2, Count: 14,569", "Year: 2025, Month: 3, Count: 15,974", "Year: 2025, Month: 4, Count: 16,707", "Year: 2025, Month: 5, Count: 15,674", "Year: 2025, Month: 6, Count: 15,813", "Year: 2025, Month: 7, Count: 16,334", "Year: 2025, Month: 8, Count: 15,777", "Year: 2025, Month: 9, Count: 16,163", "Year: 2025, Month: 10, Count: 18,080", "Year: 2025, Month: 11, Count: 14,826", "Year: 2025, Month: 12, Count: 16,442"],
             hoverinfo: 'text'
         }];
         
-        var scatterLayout = {
-            scene: {
-                xaxis: {title: 'Year'},
-                yaxis: {title: 'Month'},
-                zaxis: {title: 'Encounter Count'}
-            },
+        Plotly.newPlot('admitScatter', admitScatterData, {
+            scene: {xaxis: {title: 'Year'}, yaxis: {title: 'Month'}, zaxis: {title: 'Count'}},
             margin: {l: 0, r: 0, b: 0, t: 30}
-        };
-        
-        Plotly.newPlot('scatter3d', scatterData, scatterLayout);
+        });
 
-        // 3D Surface Plot
+        // Admission Surface
         var months = [1,2,3,4,5,6,7,8,9,10,11,12];
         var years = [2022, 2023, 2024, 2025];
-        
-        var zMatrix = [];
-        for (var i = 0; i < years.length; i++) {
-            var row = [];
-            for (var j = 0; j < months.length; j++) {
-                row.push(0);
-            }
-            zMatrix.push(row);
+        var admitZ = [];
+        for (var i = 0; i < years.length; i++) { admitZ.push(new Array(12).fill(0)); }
+        var admitPoints = [[2022, 1, 10769], [2022, 2, 9872], [2022, 3, 11890], [2022, 4, 11506], [2022, 5, 11381], [2022, 6, 11755], [2022, 7, 10853], [2022, 8, 12181], [2022, 9, 11642], [2022, 10, 11294], [2022, 11, 12458], [2022, 12, 12047], [2023, 1, 13664], [2023, 2, 12741], [2023, 3, 14492], [2023, 4, 13170], [2023, 5, 14393], [2023, 6, 14723], [2023, 7, 13180], [2023, 8, 15235], [2023, 9, 13699], [2023, 10, 15082], [2023, 11, 14148], [2023, 12, 13855], [2024, 1, 14528], [2024, 2, 14709], [2024, 3, 15247], [2024, 4, 15861], [2024, 5, 15886], [2024, 6, 13864], [2024, 7, 15038], [2024, 8, 15252], [2024, 9, 15371], [2024, 10, 17590], [2024, 11, 14890], [2024, 12, 15812], [2025, 1, 15532], [2025, 2, 14569], [2025, 3, 15974], [2025, 4, 16707], [2025, 5, 15674], [2025, 6, 15813], [2025, 7, 16334], [2025, 8, 15777], [2025, 9, 16163], [2025, 10, 18080], [2025, 11, 14826], [2025, 12, 16442]];
+        for (var i = 0; i < admitPoints.length; i++) {
+            var yIdx = years.indexOf(admitPoints[i][0]);
+            var mIdx = admitPoints[i][1] - 1;
+            admitZ[yIdx][mIdx] = admitPoints[i][2];
         }
         
-        var scatterPoints = [[2022, 1, 10769], [2022, 2, 9872], [2022, 3, 11890], [2022, 4, 11506], [2022, 5, 11381], [2022, 6, 11755], [2022, 7, 10853], [2022, 8, 12181], [2022, 9, 11642], [2022, 10, 11294], [2022, 11, 12458], [2022, 12, 12047], [2023, 1, 13664], [2023, 2, 12741], [2023, 3, 14492], [2023, 4, 13170], [2023, 5, 14393], [2023, 6, 14723], [2023, 7, 13180], [2023, 8, 15235], [2023, 9, 13699], [2023, 10, 15082], [2023, 11, 14148], [2023, 12, 13855], [2024, 1, 14528], [2024, 2, 14709], [2024, 3, 15247], [2024, 4, 15861], [2024, 5, 15886], [2024, 6, 13864], [2024, 7, 15038], [2024, 8, 15252], [2024, 9, 15371], [2024, 10, 17590], [2024, 11, 14890], [2024, 12, 15812], [2025, 1, 15532], [2025, 2, 14569], [2025, 3, 15974], [2025, 4, 16707], [2025, 5, 15674], [2025, 6, 15813], [2025, 7, 16334], [2025, 8, 15777], [2025, 9, 16163], [2025, 10, 18080], [2025, 11, 14826], [2025, 12, 16442]];
-        for (var i = 0; i < scatterPoints.length; i++) {
-            var yearIdx = years.indexOf(scatterPoints[i][0]);
-            var monthIdx = scatterPoints[i][1] - 1;
-            zMatrix[yearIdx][monthIdx] = scatterPoints[i][2];
-        }
-        
-        var surfaceData = [{
-            x: months,
-            y: years,
-            z: zMatrix,
-            type: 'surface',
-            colorscale: 'Viridis',
-            contours: {
-                z: {show: true, usecolormap: true, highlightcolor: "limegreen", project: {z: true}}
-            }
+        Plotly.newPlot('admitSurface', [{
+            x: months, y: years, z: admitZ, type: 'surface', colorscale: 'Viridis'
+        }], {
+            scene: {xaxis: {title: 'Month'}, yaxis: {title: 'Year'}, zaxis: {title: 'Count'}},
+            margin: {l: 0, r: 0, b: 0, t: 30}
+        });
+
+        // Discharge Scatter
+        var disScatterData = [{
+            x: [2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2026],
+            y: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1],
+            z: [10768, 9871, 11884, 11510, 11373, 11760, 10859, 12175, 11647, 11294, 12451, 12056, 13652, 12743, 14500, 13171, 14385, 14732, 13178, 15230, 13706, 15073, 14151, 13861, 14522, 14709, 15253, 15855, 15892, 13862, 15033, 15258, 15370, 17588, 14894, 15811, 15526, 14575, 15968, 16706, 15682, 15804, 16338, 15780, 16158, 18083, 14830, 16440, 2],
+            mode: 'markers',
+            marker: {size: 8, color: [10768, 9871, 11884, 11510, 11373, 11760, 10859, 12175, 11647, 11294, 12451, 12056, 13652, 12743, 14500, 13171, 14385, 14732, 13178, 15230, 13706, 15073, 14151, 13861, 14522, 14709, 15253, 15855, 15892, 13862, 15033, 15258, 15370, 17588, 14894, 15811, 15526, 14575, 15968, 16706, 15682, 15804, 16338, 15780, 16158, 18083, 14830, 16440, 2], colorscale: 'Plasma', opacity: 0.8},
+            type: 'scatter3d',
+            text: ["Year: 2022, Month: 1, Count: 10,768", "Year: 2022, Month: 2, Count: 9,871", "Year: 2022, Month: 3, Count: 11,884", "Year: 2022, Month: 4, Count: 11,510", "Year: 2022, Month: 5, Count: 11,373", "Year: 2022, Month: 6, Count: 11,760", "Year: 2022, Month: 7, Count: 10,859", "Year: 2022, Month: 8, Count: 12,175", "Year: 2022, Month: 9, Count: 11,647", "Year: 2022, Month: 10, Count: 11,294", "Year: 2022, Month: 11, Count: 12,451", "Year: 2022, Month: 12, Count: 12,056", "Year: 2023, Month: 1, Count: 13,652", "Year: 2023, Month: 2, Count: 12,743", "Year: 2023, Month: 3, Count: 14,500", "Year: 2023, Month: 4, Count: 13,171", "Year: 2023, Month: 5, Count: 14,385", "Year: 2023, Month: 6, Count: 14,732", "Year: 2023, Month: 7, Count: 13,178", "Year: 2023, Month: 8, Count: 15,230", "Year: 2023, Month: 9, Count: 13,706", "Year: 2023, Month: 10, Count: 15,073", "Year: 2023, Month: 11, Count: 14,151", "Year: 2023, Month: 12, Count: 13,861", "Year: 2024, Month: 1, Count: 14,522", "Year: 2024, Month: 2, Count: 14,709", "Year: 2024, Month: 3, Count: 15,253", "Year: 2024, Month: 4, Count: 15,855", "Year: 2024, Month: 5, Count: 15,892", "Year: 2024, Month: 6, Count: 13,862", "Year: 2024, Month: 7, Count: 15,033", "Year: 2024, Month: 8, Count: 15,258", "Year: 2024, Month: 9, Count: 15,370", "Year: 2024, Month: 10, Count: 17,588", "Year: 2024, Month: 11, Count: 14,894", "Year: 2024, Month: 12, Count: 15,811", "Year: 2025, Month: 1, Count: 15,526", "Year: 2025, Month: 2, Count: 14,575", "Year: 2025, Month: 3, Count: 15,968", "Year: 2025, Month: 4, Count: 16,706", "Year: 2025, Month: 5, Count: 15,682", "Year: 2025, Month: 6, Count: 15,804", "Year: 2025, Month: 7, Count: 16,338", "Year: 2025, Month: 8, Count: 15,780", "Year: 2025, Month: 9, Count: 16,158", "Year: 2025, Month: 10, Count: 18,083", "Year: 2025, Month: 11, Count: 14,830", "Year: 2025, Month: 12, Count: 16,440", "Year: 2026, Month: 1, Count: 2"],
+            hoverinfo: 'text'
         }];
         
-        var surfaceLayout = {
-            scene: {
-                xaxis: {title: 'Month'},
-                yaxis: {title: 'Year'},
-                zaxis: {title: 'Count'}
-            },
+        Plotly.newPlot('dischargeScatter', disScatterData, {
+            scene: {xaxis: {title: 'Year'}, yaxis: {title: 'Month'}, zaxis: {title: 'Count'}},
             margin: {l: 0, r: 0, b: 0, t: 30}
-        };
+        });
+
+        // Discharge Surface
+        var disZ = [];
+        for (var i = 0; i < years.length; i++) { disZ.push(new Array(12).fill(0)); }
+        var disPoints = [[2022, 1, 10768], [2022, 2, 9871], [2022, 3, 11884], [2022, 4, 11510], [2022, 5, 11373], [2022, 6, 11760], [2022, 7, 10859], [2022, 8, 12175], [2022, 9, 11647], [2022, 10, 11294], [2022, 11, 12451], [2022, 12, 12056], [2023, 1, 13652], [2023, 2, 12743], [2023, 3, 14500], [2023, 4, 13171], [2023, 5, 14385], [2023, 6, 14732], [2023, 7, 13178], [2023, 8, 15230], [2023, 9, 13706], [2023, 10, 15073], [2023, 11, 14151], [2023, 12, 13861], [2024, 1, 14522], [2024, 2, 14709], [2024, 3, 15253], [2024, 4, 15855], [2024, 5, 15892], [2024, 6, 13862], [2024, 7, 15033], [2024, 8, 15258], [2024, 9, 15370], [2024, 10, 17588], [2024, 11, 14894], [2024, 12, 15811], [2025, 1, 15526], [2025, 2, 14575], [2025, 3, 15968], [2025, 4, 16706], [2025, 5, 15682], [2025, 6, 15804], [2025, 7, 16338], [2025, 8, 15780], [2025, 9, 16158], [2025, 10, 18083], [2025, 11, 14830], [2025, 12, 16440], [2026, 1, 2]];
+        for (var i = 0; i < disPoints.length; i++) {
+            var yIdx = years.indexOf(disPoints[i][0]);
+            var mIdx = disPoints[i][1] - 1;
+            if (yIdx >= 0 && mIdx >= 0) disZ[yIdx][mIdx] = disPoints[i][2];
+        }
         
-        Plotly.newPlot('surface3d', surfaceData, surfaceLayout);
+        Plotly.newPlot('dischargeSurface', [{
+            x: months, y: years, z: disZ, type: 'surface', colorscale: 'Plasma'
+        }], {
+            scene: {xaxis: {title: 'Month'}, yaxis: {title: 'Year'}, zaxis: {title: 'Count'}},
+            margin: {l: 0, r: 0, b: 0, t: 30}
+        });
     </script>
 </body>
 </html>
