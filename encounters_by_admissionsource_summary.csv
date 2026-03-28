@@ -1,0 +1,48 @@
+AdmissionSource,RowCount
+*Not Applicable,6554150
+Clinic or Physician's Office,446615
+Non-Health Care Facility Point of Origin,329476
+Clinic/Physician Referral,243193
+Home,72274
+Transfer from a Hospital (Different Facility),10807
+Born Inside this Hospital,6935
+Transfer from Another Health Care Facility,3452
+Transfer from Skilled Nursing (SNF) or Intermediate Care Facility (ICF),1986
+Acute Care Hospital,1985
+,1400
+Court/Law Enforcement,1035
+ER VISIT FROM HOME,939
+Born Outside of this Hospital,282
+Transfer from One Distinct Unit to another Distinct Unit in Same Hospital,221
+Another Health Care Institution Not Defined,212
+Nursing Home/Long Term Care,104
+Critical Access Hospital,95
+Skilled Nursing Facility,94
+Correctional Facility,85
+Assisted Living,77
+Rehab Facility,59
+"Home w/ self care, independent living",57
+Federal Hospital,50
+ER VISIT FROM MD OFFICE,43
+Transfer from Ambulatory Surgery Center,30
+Home with Home Health Agency,18
+Psychiatric Unit or Facility,16
+SV West Adult,16
+Transfer from one distinct unit to another distinct unit,15
+Transfer from Hospice and is Under a Hospice Plan of Care,14
+Military Treatment Facility,11
+Ambulatory Surgery Center,10
+Home with parent or caregiver,9
+Long Term Acute Care Hospital,7
+Born Outside this Hospital,6
+Drug/Alcohol Rehab Facility,5
+Swing Bed,4
+State Hospital,3
+TRANSFER FROM ACUTE TO SDU-MEDICARE ONLY,2
+SV West Child,2
+Senior Diagnostic Unit,2
+Transfer from another Home Health Agency,1
+Hospice at Home,1
+TRANSFER FROM SDU TO ACUTE-MEDICARE ONLY,1
+Hospice,1
+Hospice at SNF,1
