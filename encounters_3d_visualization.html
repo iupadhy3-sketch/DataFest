@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataFest 3D Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        .chart { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        .stats { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0; }
+        .stat-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; min-width: 150px; }
+        .stat-value { font-size: 28px; font-weight: bold; color: #007bff; }
+        .stat-label { font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>DataFest 3D Visualization</h1>
+    
+    <div class="stats">
+        <div class="stat-box">
+            <div class="stat-value">681,984</div>
+            <div class="stat-label">Total Encounters</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Years</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">21</div>
+            <div class="stat-label">Admission Sources</div>
+        </div>
+    </div>
+
+    <div class="chart">
+        <h2 style="text-align:center;">Encounters by Year and Month (3D Scatter)</h2>
+        <div id="scatter3d" style="width:100%;height:500px;"></div>
+    </div>
+
+    <div class="chart">
+        <h2 style="text-align:center;">Monthly Trends by Year (3D Surface)</h2>
+        <div id="surface3d" style="width:100%;height:500px;"></div>
+    </div>
+
+    <script>
+        // 3D Scatter Plot
+        var scatterData = [{
+            x: [2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025],
+            y: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            z: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11644, 11296, 12459, 12048, 13665, 12741, 14492, 13170, 14395, 14723, 13180, 15236, 13699, 15082, 14149, 13855, 14528, 14709, 15247, 15861, 15886, 13865, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14570, 15974, 16707, 15674, 15813, 16335, 15777, 16163, 18081, 14826, 16442],
+            mode: 'markers',
+            marker: {
+                size: 8,
+                color: [10769, 9872, 11890, 11506, 11381, 11755, 10853, 12181, 11644, 11296, 12459, 12048, 13665, 12741, 14492, 13170, 14395, 14723, 13180, 15236, 13699, 15082, 14149, 13855, 14528, 14709, 15247, 15861, 15886, 13865, 15038, 15252, 15371, 17590, 14890, 15812, 15532, 14570, 15974, 16707, 15674, 15813, 16335, 15777, 16163, 18081, 14826, 16442],
+                colorscale: 'Viridis',
+                opacity: 0.8
+            },
+            type: 'scatter3d',
+            text: ["Year: 2022, Month: 1, Count: 10,769", "Year: 2022, Month: 2, Count: 9,872", "Year: 2022, Month: 3, Count: 11,890", "Year: 2022, Month: 4, Count: 11,506", "Year: 2022, Month: 5, Count: 11,381", "Year: 2022, Month: 6, Count: 11,755", "Year: 2022, Month: 7, Count: 10,853", "Year: 2022, Month: 8, Count: 12,181", "Year: 2022, Month: 9, Count: 11,644", "Year: 2022, Month: 10, Count: 11,296", "Year: 2022, Month: 11, Count: 12,459", "Year: 2022, Month: 12, Count: 12,048", "Year: 2023, Month: 1, Count: 13,665", "Year: 2023, Month: 2, Count: 12,741", "Year: 2023, Month: 3, Count: 14,492", "Year: 2023, Month: 4, Count: 13,170", "Year: 2023, Month: 5, Count: 14,395", "Year: 2023, Month: 6, Count: 14,723", "Year: 2023, Month: 7, Count: 13,180", "Year: 2023, Month: 8, Count: 15,236", "Year: 2023, Month: 9, Count: 13,699", "Year: 2023, Month: 10, Count: 15,082", "Year: 2023, Month: 11, Count: 14,149", "Year: 2023, Month: 12, Count: 13,855", "Year: 2024, Month: 1, Count: 14,528", "Year: 2024, Month: 2, Count: 14,709", "Year: 2024, Month: 3, Count: 15,247", "Year: 2024, Month: 4, Count: 15,861", "Year: 2024, Month: 5, Count: 15,886", "Year: 2024, Month: 6, Count: 13,865", "Year: 2024, Month: 7, Count: 15,038", "Year: 2024, Month: 8, Count: 15,252", "Year: 2024, Month: 9, Count: 15,371", "Year: 2024, Month: 10, Count: 17,590", "Year: 2024, Month: 11, Count: 14,890", "Year: 2024, Month: 12, Count: 15,812", "Year: 2025, Month: 1, Count: 15,532", "Year: 2025, Month: 2, Count: 14,570", "Year: 2025, Month: 3, Count: 15,974", "Year: 2025, Month: 4, Count: 16,707", "Year: 2025, Month: 5, Count: 15,674", "Year: 2025, Month: 6, Count: 15,813", "Year: 2025, Month: 7, Count: 16,335", "Year: 2025, Month: 8, Count: 15,777", "Year: 2025, Month: 9, Count: 16,163", "Year: 2025, Month: 10, Count: 18,081", "Year: 2025, Month: 11, Count: 14,826", "Year: 2025, Month: 12, Count: 16,442"],
+            hoverinfo: 'text'
+        }];
+        
+        var scatterLayout = {
+            scene: {
+                xaxis: {title: 'Year'},
+                yaxis: {title: 'Month'},
+                zaxis: {title: 'Encounter Count'}
+            },
+            margin: {l: 0, r: 0, b: 0, t: 30}
+        };
+        
+        Plotly.newPlot('scatter3d', scatterData, scatterLayout);
+
+        // 3D Surface Plot
+        var months = [1,2,3,4,5,6,7,8,9,10,11,12];
+        var years = [2022, 2023, 2024, 2025];
+        
+        var zMatrix = [];
+        for (var i = 0; i < years.length; i++) {
+            var row = [];
+            for (var j = 0; j < months.length; j++) {
+                row.push(0);
+            }
+            zMatrix.push(row);
+        }
+        
+        var scatterPoints = [[2022, 1, 10769], [2022, 2, 9872], [2022, 3, 11890], [2022, 4, 11506], [2022, 5, 11381], [2022, 6, 11755], [2022, 7, 10853], [2022, 8, 12181], [2022, 9, 11644], [2022, 10, 11296], [2022, 11, 12459], [2022, 12, 12048], [2023, 1, 13665], [2023, 2, 12741], [2023, 3, 14492], [2023, 4, 13170], [2023, 5, 14395], [2023, 6, 14723], [2023, 7, 13180], [2023, 8, 15236], [2023, 9, 13699], [2023, 10, 15082], [2023, 11, 14149], [2023, 12, 13855], [2024, 1, 14528], [2024, 2, 14709], [2024, 3, 15247], [2024, 4, 15861], [2024, 5, 15886], [2024, 6, 13865], [2024, 7, 15038], [2024, 8, 15252], [2024, 9, 15371], [2024, 10, 17590], [2024, 11, 14890], [2024, 12, 15812], [2025, 1, 15532], [2025, 2, 14570], [2025, 3, 15974], [2025, 4, 16707], [2025, 5, 15674], [2025, 6, 15813], [2025, 7, 16335], [2025, 8, 15777], [2025, 9, 16163], [2025, 10, 18081], [2025, 11, 14826], [2025, 12, 16442]];
+        for (var i = 0; i < scatterPoints.length; i++) {
+            var yearIdx = years.indexOf(scatterPoints[i][0]);
+            var monthIdx = scatterPoints[i][1] - 1;
+            zMatrix[yearIdx][monthIdx] = scatterPoints[i][2];
+        }
+        
+        var surfaceData = [{
+            x: months,
+            y: years,
+            z: zMatrix,
+            type: 'surface',
+            colorscale: 'Viridis',
+            contours: {
+                z: {show: true, usecolormap: true, highlightcolor: "limegreen", project: {z: true}}
+            }
+        }];
+        
+        var surfaceLayout = {
+            scene: {
+                xaxis: {title: 'Month'},
+                yaxis: {title: 'Year'},
+                zaxis: {title: 'Count'}
+            },
+            margin: {l: 0, r: 0, b: 0, t: 30}
+        };
+        
+        Plotly.newPlot('surface3d', surfaceData, surfaceLayout);
+    </script>
+</body>
+</html>
