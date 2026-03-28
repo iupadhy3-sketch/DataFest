@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <h1>DataFest 3D Visualization - Linked Data</h1>
+    <h1>DataFest 3D Visualization</h1>
     
     <div class="stats">
         <div class="stat-box">
@@ -56,62 +56,26 @@
         <p>PrimaryDiagnosisKey = -1 indicates no diagnosis was needed or given.</p>
         <div id="diagCompare"></div>
         <table style="margin-top: 20px;">
-            <tr>
-                <th>Category</th>
-                <th>Count</th>
-                <th>Percentage</th>
-            </tr>
-            <tr>
-                <td><strong>PrimaryDiagnosisKey = -1</strong></td>
-                <td>181,128</td>
-                <td>26.6%</td>
-            </tr>
-            <tr style="background: #f9f9f9;">
-                <td><strong>PrimaryDiagnosisKey != -1</strong></td>
-                <td>500,841</td>
-                <td>73.4%</td>
-            </tr>
+            <tr><th>Category</th><th>Count</th><th>Percentage</th></tr>
+            <tr><td><strong>PrimaryDiagnosisKey = -1</strong></td><td>181,128</td><td>26.6%</td></tr>
+            <tr style="background: #f9f9f9;"><td><strong>PrimaryDiagnosisKey != -1</strong></td><td>500,841</td><td>73.4%</td></tr>
         </table>
     </div>
 
     <div class="diagram">
         <h2>Data Relationships</h2>
         <table>
-            <tr>
-                <th>From</th>
-                <th>To</th>
-                <th>Relationship</th>
-                <th>Count</th>
-            </tr>
-            <tr>
-                <td>Encounters</td>
-                <td>Patients</td>
-                <td>PatientDurableKey → DurableKey</td>
-                <td>681,969 → 119,136</td>
-            </tr>
-            <tr style="background: #f9f9f9;">
-                <td>Encounters</td>
-                <td>Departments</td>
-                <td>DepartmentKey</td>
-                <td>681,969 → 81</td>
-            </tr>
-            <tr>
-                <td>Encounters</td>
-                <td>Providers</td>
-                <td>AttendingProviderDurableKey → DurableKey</td>
-                <td>681,969 → 3,784</td>
-            </tr>
-            <tr style="background: #f9f9f9;">
-                <td>Encounters</td>
-                <td>Diagnosis</td>
-                <td>PrimaryDiagnosisKey → DiagnosisKey</td>
-                <td>500,841 → 15,696</td>
-            </tr>
+            <tr><th>From</th><th>To</th><th>Relationship</th><th>Count</th></tr>
+            <tr><td>Encounters</td><td>Patients</td><td>PatientDurableKey</td><td>681,969 → 119,136</td></tr>
+            <tr style="background: #f9f9f9;"><td>Encounters</td><td>Departments</td><td>DepartmentKey</td><td>681,969 → 81</td></tr>
+            <tr><td>Encounters</td><td>Providers</td><td>AttendingProviderDurableKey</td><td>681,969 → 3,784</td></tr>
+            <tr style="background: #f9f9f9;"><td>Encounters</td><td>Diagnosis</td><td>PrimaryDiagnosisKey</td><td>500,841 → 15,696</td></tr>
         </table>
     </div>
 
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <script>
-        // Department Bar Chart (with larger minimum for visibility)
+        // Department Bar Chart
         Plotly.newPlot('deptChart', [{
             x: ["HOD", "ICU", "L&D", "OR"],
             y: [438749, 397, 24, 20544],
@@ -121,11 +85,10 @@
             textposition: 'outside'
         }], {
             responsive: true,
-            margin: {t: 50},
-            yaxis: {title: 'Count'}
+            margin: {t: 50, l: 50, r: 50, b: 100}
         });
 
-        // Diagnosis 3D Scatter with Spheres
+        // Diagnosis 3D with Spheres
         var diagX = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         var diagZ = [47582, 16966, 15789, 13455, 12568, 10738, 10507, 10122, 8843, 8787];
         
@@ -134,12 +97,11 @@
             y: diagZ,
             z: diagZ,
             mode: 'markers',
-            marker = {
+            marker: {
                 size: diagZ.map(v => Math.sqrt(v) / 2),
                 color: diagZ,
                 colorscale: 'Viridis',
-                symbol: 'circle',
-                line: {width: 2, color: 'white'}
+                symbol: 'circle'
             },
             type: 'scatter3d',
             text: ["Dorsalgia", "Other joint disorder, not elsewhere classifie", "Encounter for screening for malignant neoplas", "Osteoporosis without current pathological fra", "Encounter for other special examination witho", "Spondylosis", "Iron deficiency anemia", "Abdominal and pelvic pain", "Abnormal findings on diagnostic imaging of lu", "Personal history of other diseases and condit"],
@@ -153,23 +115,19 @@
             margin: {t: 50}
         });
 
-        // Department x Diagnosis Bar Chart
+        // Department x Diagnosis
         Plotly.newPlot('deptDiagChart', [{"x": ["Dorsalgia", "Other joint disorder, not else", "Encounter for screening for ma", "Osteoporosis without current p", "Spondylosis"], "y": [47367, 16776, 15786, 13453, 10643], "type": "bar", "name": "HOD", "marker": {"color": "#007bff"}}, {"x": ["Convulsions, not elsewhere cla", "Epilepsy and recurrent seizure", "Lack of expected normal physio", "Hypofunction and other disorde", "Migraine"], "y": [34, 26, 22, 21, 20], "type": "bar", "name": "ICU", "marker": {"color": "#28a745"}}, {"x": ["Complications of the puerperiu", "Other maternal diseases classi", "Leiomyoma of uterus", "Pre-eclampsia", "Complications of anesthesia du"], "y": [7, 3, 3, 2, 1], "type": "bar", "name": "L&D", "marker": {"color": "#dc3545"}}, {"x": ["Encounter for other special ex", "Osteoarthritis of knee", "Overweight and obesity", "Osteoarthritis of hip", "Type 2 diabetes mellitus"], "y": [9448, 1093, 618, 474, 414], "type": "bar", "name": "OR", "marker": {"color": "#ffc107"}}], {
             responsive: true,
-            margin: {t: 50},
-            barmode: 'group'
+            margin: {t: 50, l: 50, r: 50, b: 100}
         });
 
-        // Diagnosis Comparison Chart
+        // Diagnosis Comparison
         Plotly.newPlot('diagCompare', [{
             labels: ['PrimaryDiagnosisKey = -1', 'PrimaryDiagnosisKey != -1'],
             values: [181128, 500841],
             type: 'pie',
-            marker: {
-                colors: ['#dc3545', '#28a745']
-            },
-            textinfo: 'label+percent',
-            textposition: 'inside'
+            marker: {colors: ['#dc3545', '#28a745']},
+            textinfo: 'label+percent'
         }], {
             responsive: true,
             margin: {t: 50}
