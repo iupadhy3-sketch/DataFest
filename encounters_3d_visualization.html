@@ -31,7 +31,7 @@
             <div class="stat-label">Unique Patients</div>
         </div>
         <div class="stat-box">
-            <div class="stat-value">4</div>
+            <div class="stat-value">5</div>
             <div class="stat-label">Department Types</div>
         </div>
     </div>
@@ -97,11 +97,11 @@
     <script>
         // Department Bar Chart
         Plotly.newPlot('deptChart', [{
-            x: ["HOD", "ICU", "L&D", "OR"],
-            y: [622722, 405, 33, 40256],
+            x: ["L&D", "ICU", "OR", "*Unknown", "HOD"],
+            y: [33, 405, 40256, 18553, 622722],
             type: 'bar',
-            marker: {color: '#007bff'},
-            text: [622722, 405, 33, 40256],
+            marker: {color: ['#dc3545', '#28a745', '#ffc107', '#6c757d', '#007bff']},
+            text: [33, 405, 40256, 18553, 622722],
             textposition: 'outside'
         }], {
             responsive: true,
