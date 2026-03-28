@@ -17,7 +17,7 @@
         td { padding: 10px; border-bottom: 1px solid #ddd; }
         tr:hover { background: #f8f9fa; }
         .section { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
-        .note { background: #f8d7da; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #dc3545; }
+        .note { background: #fff3cd; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #ffc107; }
         .info { background: #d1ecf1; padding: 15px; border-radius: 5px; border-left: 4px solid #17a2b8; margin-top: 10px; }
     </style>
 </head>
@@ -36,35 +36,35 @@
         </div>
         <div class="stat valid">
             <div class="stat-label">Valid Rows</div>
-            <div class="stat-value">681,984</div>
+            <div class="stat-value">681,969</div>
         </div>
         <div class="stat na">
             <div class="stat-label">Invalid Rows</div>
-            <div class="stat-value">6,993,817</div>
+            <div class="stat-value">6,993,832</div>
         </div>
     </div>
 
-    <div class="note" style="background: #fff3cd; border-left-color: #ffc107;">
-        <strong>Filters Applied:</strong> Removed rows with N/A, NULL, or *Unspecified values in any column.
+    <div class="note">
+        <strong>Filters Applied:</strong> Removed rows with N/A, NULL, *Unspecified, or Information Not Available.
     </div>
 
     <div class="section">
-        <h2>Valid Rows Breakdown (681,984 rows)</h2>
+        <h2>Valid Rows Breakdown (681,969 rows)</h2>
         
         <h3>By Admission Source</h3>
         <table>
             <tr><th>Admission Source</th><th>Count</th><th>Percentage</th></tr>
-            <tr><td>Clinic or Physician's Office</td><td>435,497</td><td>63.9%</td></tr><tr><td>Clinic/Physician Referral</td><td>238,154</td><td>34.9%</td></tr><tr><td>Non-Health Care Facility Point of Origin</td><td>4,502</td><td>0.7%</td></tr><tr><td>Home</td><td>3,703</td><td>0.5%</td></tr><tr><td>Born Inside this Hospital</td><td>44</td><td>0.0%</td></tr><tr><td>Acute Care Hospital</td><td>20</td><td>0.0%</td></tr><tr><td>Transfer from Another Health Care Facility</td><td>16</td><td>0.0%</td></tr><tr><td>Transfer from a Hospital (Different Facility)</td><td>11</td><td>0.0%</td></tr><tr><td>Court/Law Enforcement</td><td>9</td><td>0.0%</td></tr><tr><td>Transfer from Skilled Nursing (SNF) or Intermediate Care Facility (ICF)</td><td>6</td><td>0.0%</td></tr><tr><td>Another Health Care Institution Not Defined</td><td>5</td><td>0.0%</td></tr><tr><td>Correctional Facility</td><td>3</td><td>0.0%</td></tr><tr><td>Home w/ self care, independent living</td><td>3</td><td>0.0%</td></tr><tr><td>ER VISIT FROM HOME</td><td>2</td><td>0.0%</td></tr><tr><td>Born Outside this Hospital</td><td>2</td><td>0.0%</td></tr><tr><td>Born Outside of this Hospital</td><td>2</td><td>0.0%</td></tr><tr><td>Ambulatory Surgery Center</td><td>1</td><td>0.0%</td></tr><tr><td>Home with parent or caregiver</td><td>1</td><td>0.0%</td></tr><tr><td>Nursing Home/Long Term Care</td><td>1</td><td>0.0%</td></tr><tr><td>Transfer from One Distinct Unit to another Distinct Unit in Same Hospital</td><td>1</td><td>0.0%</td></tr><tr><td>Critical Access Hospital</td><td>1</td><td>0.0%</td></tr>
+            <tr><td>Clinic or Physician's Office</td><td>435,490</td><td>63.9%</td></tr><tr><td>Clinic/Physician Referral</td><td>238,154</td><td>34.9%</td></tr><tr><td>Non-Health Care Facility Point of Origin</td><td>4,495</td><td>0.7%</td></tr><tr><td>Home</td><td>3,702</td><td>0.5%</td></tr><tr><td>Born Inside this Hospital</td><td>44</td><td>0.0%</td></tr><tr><td>Acute Care Hospital</td><td>20</td><td>0.0%</td></tr><tr><td>Transfer from Another Health Care Facility</td><td>16</td><td>0.0%</td></tr><tr><td>Transfer from a Hospital (Different Facility)</td><td>11</td><td>0.0%</td></tr><tr><td>Court/Law Enforcement</td><td>9</td><td>0.0%</td></tr><tr><td>Transfer from Skilled Nursing (SNF) or Intermediate Care Facility (ICF)</td><td>6</td><td>0.0%</td></tr><tr><td>Another Health Care Institution Not Defined</td><td>5</td><td>0.0%</td></tr><tr><td>Correctional Facility</td><td>3</td><td>0.0%</td></tr><tr><td>Home w/ self care, independent living</td><td>3</td><td>0.0%</td></tr><tr><td>ER VISIT FROM HOME</td><td>2</td><td>0.0%</td></tr><tr><td>Born Outside this Hospital</td><td>2</td><td>0.0%</td></tr><tr><td>Born Outside of this Hospital</td><td>2</td><td>0.0%</td></tr><tr><td>Ambulatory Surgery Center</td><td>1</td><td>0.0%</td></tr><tr><td>Home with parent or caregiver</td><td>1</td><td>0.0%</td></tr><tr><td>Nursing Home/Long Term Care</td><td>1</td><td>0.0%</td></tr><tr><td>Transfer from One Distinct Unit to another Distinct Unit in Same Hospital</td><td>1</td><td>0.0%</td></tr><tr><td>Critical Access Hospital</td><td>1</td><td>0.0%</td></tr>
         </table>
 
         <h3>By Admission Type</h3>
         <table>
             <tr><th>Admission Type</th><th>Count</th><th>Percentage</th></tr>
-            <tr><td>Elective</td><td>681,554</td><td>99.9%</td></tr><tr><td>Newborn</td><td>194</td><td>0.0%</td></tr><tr><td>Urgent</td><td>131</td><td>0.0%</td></tr><tr><td>Emergency</td><td>87</td><td>0.0%</td></tr><tr><td>Information Not Available</td><td>15</td><td>0.0%</td></tr><tr><td>Disaster</td><td>3</td><td>0.0%</td></tr>
+            <tr><td>Elective</td><td>681,554</td><td>99.9%</td></tr><tr><td>Newborn</td><td>194</td><td>0.0%</td></tr><tr><td>Urgent</td><td>131</td><td>0.0%</td></tr><tr><td>Emergency</td><td>87</td><td>0.0%</td></tr><tr><td>Disaster</td><td>3</td><td>0.0%</td></tr>
         </table>
 
         <div class="info">
-            <strong>Summary:</strong> After filtering, we have <strong>681,984 clean rows</strong> for analysis.
+            <strong>Summary:</strong> After filtering, we have <strong>681,969 clean rows</strong> for analysis.
         </div>
     </div>
 </body>
