@@ -10,15 +10,18 @@
         th { background: #dc3545; color: white; position: sticky; top: 0; }
         tr:nth-child(even) { background: #f8f8f8; }
         .info { background: #f8d7da; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
-        .refused { background: #fff3cd; }
+        .note { background: #fff3cd; padding: 10px; border-left: 4px solid #ffc107; margin: 10px 0; }
     </style>
 </head>
 <body>
     <h1>Invalid Encounters (Sorted: Least to Most Data Loss)</h1>
     <div class="info">
         <strong>Total Invalid Rows:</strong> 6,993,832<br>
-        <strong>Showing:</strong> First 100 rows<br>
-        <strong>Note:</strong> Rows with *Unspecified, *Unknown, etc. are marked as "Refused or No Answer"
+        <strong>Showing:</strong> First 100 rows
+    </div>
+    <div class="note">
+        <strong>Note:</strong> Values with asterisk (*) are shown as "Refused or No Answer".<br>
+        Other missing values (N/A, Not Applicable, etc.) are shown as blank.
     </div>
     <div style="overflow: auto; max-height: 90vh;">
 <table border="1" class="dataframe">
@@ -92,353 +95,23 @@
       <td>1</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:59:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>59.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2025-12-31 23:12:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>12.0</td>
-      <td>150994142</td>
-      <td>423738</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>335146</td>
-      <td>27</td>
-      <td>1571482</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:24:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>24.0</td>
-      <td>Transfer from Another Health Care Facility</td>
-      <td>Emergency</td>
-      <td>2026-01-05 14:05:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>14.0</td>
-      <td>5.0</td>
-      <td>152122339</td>
-      <td>10388981</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>8184</td>
-      <td>854797</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:51:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>51.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 19:24:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>24.0</td>
-      <td>152125309</td>
-      <td>4834565</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>20</td>
-      <td>928405</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:46:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>46.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Urgent</td>
-      <td>2026-01-05 12:26:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>12.0</td>
-      <td>26.0</td>
-      <td>152122319</td>
-      <td>472143</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>42</td>
-      <td>852743</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:45:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>45.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 20:15:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>15.0</td>
-      <td>152122343</td>
-      <td>7039375</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>20</td>
-      <td>864701</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:42:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>42.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 21:56:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>56.0</td>
-      <td>152122382</td>
-      <td>4156571</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>20</td>
-      <td>859344</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:41:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>41.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 21:59:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>59.0</td>
-      <td>152122532</td>
-      <td>223903</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>20</td>
-      <td>913946</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:38:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>38.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 22:10:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:39:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>22.0</td>
-      <td>10.0</td>
-      <td>152122475</td>
-      <td>5851038</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>20</td>
-      <td>857742</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 21:04:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>4.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2026-01-01 11:17:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>11.0</td>
-      <td>17.0</td>
-      <td>152122274</td>
-      <td>6829432</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>27</td>
-      <td>906355</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:34:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>34.0</td>
+      <td>15.0</td>
+      <td>39.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 20:11:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>11.0</td>
-      <td>152122313</td>
-      <td>8404710</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>83664</td>
-      <td>83664</td>
-      <td>83664</td>
-      <td>11788</td>
-      <td>857558</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:21:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>21.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 19:21:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>21.0</td>
-      <td>152130358</td>
-      <td>4808408</td>
+      <td>2023-06-22 16:15:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>15.0</td>
+      <td>117525970</td>
+      <td>4427984</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
@@ -455,221 +128,452 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:53:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>53.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Urgent</td>
-      <td>2026-01-02 13:45:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>45.0</td>
-      <td>152122383</td>
-      <td>10607340</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>452667</td>
-      <td>452667</td>
-      <td>452667</td>
-      <td>11763</td>
-      <td>854649</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:18:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>18.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-04 13:30:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>13.0</td>
-      <td>30.0</td>
-      <td>152122390</td>
-      <td>4461979</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>26</td>
-      <td>922669</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:07:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>7.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2025-12-31 19:57:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>57.0</td>
-      <td>152122325</td>
-      <td>124248</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>335146</td>
-      <td>27</td>
-      <td>1571482</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:04:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>4.0</td>
-      <td>Transfer from a Hospital (Different Facility)</td>
-      <td>Urgent</td>
-      <td>2026-01-13 09:11:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>11.0</td>
-      <td>152122310</td>
-      <td>8341048</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>42</td>
-      <td>906402</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:04:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>4.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-06 15:01:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:42:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>15.0</td>
-      <td>1.0</td>
-      <td>152122279</td>
-      <td>8698055</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1265</td>
-      <td>1265</td>
-      <td>1265</td>
-      <td>37</td>
-      <td>907612</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 17:56:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>17.0</td>
-      <td>56.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>42.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-03 14:25:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>14.0</td>
-      <td>25.0</td>
-      <td>152122380</td>
-      <td>2849194</td>
+      <td>2023-06-22 21:40:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>40.0</td>
+      <td>117525978</td>
+      <td>7644173</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>1179</td>
-      <td>1179</td>
-      <td>1179</td>
-      <td>37</td>
-      <td>1550185</td>
-      <td>1</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>858530</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 17:40:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>17.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 10:40:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
       <td>40.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 21:17:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
+      <td>2023-06-22 11:11:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>117525981</td>
+      <td>2652070</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>20</td>
+      <td>853448</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 02:37:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>37.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 03:10:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>3.0</td>
+      <td>10.0</td>
+      <td>117525993</td>
+      <td>7219858</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>-1</td>
+      <td>20</td>
+      <td>915009</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 05:15:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 06:39:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>39.0</td>
+      <td>117526007</td>
+      <td>8982389</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>20</td>
+      <td>1549933</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 08:42:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>8.0</td>
+      <td>42.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 09:51:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>51.0</td>
+      <td>117526022</td>
+      <td>408261</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>906461</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 06:03:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>3.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 07:24:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>7.0</td>
+      <td>24.0</td>
+      <td>117526040</td>
+      <td>957780</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>906253</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:51:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>51.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 17:02:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>17.0</td>
-      <td>152122284</td>
-      <td>434956</td>
+      <td>2.0</td>
+      <td>117526043</td>
+      <td>760637</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>-1</td>
+      <td>20</td>
+      <td>915009</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:17:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>17.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 16:14:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>14.0</td>
+      <td>117525956</td>
+      <td>698174</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>906438</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>46.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 15:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>58.0</td>
+      <td>117526077</td>
+      <td>6912051</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>-1</td>
+      <td>20</td>
+      <td>915009</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 06:33:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>33.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 06:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>58.0</td>
+      <td>117526084</td>
+      <td>6699347</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>916264</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 08:15:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>8.0</td>
+      <td>15.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 11:15:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>117526095</td>
+      <td>6180362</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>20</td>
+      <td>855167</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:38:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>38.0</td>
+      <td>Transfer from Another Health Care Facility</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>23.0</td>
+      <td>117526103</td>
+      <td>691682</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>1582663</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 23:27:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>23.0</td>
+      <td>27.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-07-06 10:47:00</td>
+      <td>2023.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>10.0</td>
+      <td>47.0</td>
+      <td>117526107</td>
+      <td>8916899</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1265</td>
+      <td>1265</td>
+      <td>1265</td>
+      <td>34</td>
+      <td>852516</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:57:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>57.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:30:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>30.0</td>
+      <td>117526127</td>
+      <td>6889955</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
@@ -677,7 +581,7 @@
       <td>18298</td>
       <td>18298</td>
       <td>20</td>
-      <td>854219</td>
+      <td>927782</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -686,29 +590,854 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:30:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>30.0</td>
-      <td>Born Inside this Hospital</td>
-      <td>Newborn</td>
-      <td>2026-01-01 19:37:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>19.0</td>
-      <td>37.0</td>
-      <td>152122295</td>
-      <td>11101612</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 13:38:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>38.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 14:35:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>14.0</td>
+      <td>35.0</td>
+      <td>117526135</td>
+      <td>9061697</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>1233</td>
-      <td>1233</td>
-      <td>1233</td>
+      <td>303141</td>
+      <td>303141</td>
+      <td>303141</td>
+      <td>20</td>
+      <td>885342</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 01:32:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>1.0</td>
+      <td>32.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 01:49:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>1.0</td>
+      <td>49.0</td>
+      <td>117526162</td>
+      <td>548082</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24688</td>
+      <td>24688</td>
+      <td>24688</td>
+      <td>20</td>
+      <td>926866</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 12:50:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>12.0</td>
+      <td>50.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 15:16:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>16.0</td>
+      <td>117526201</td>
+      <td>4408027</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>906253</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:49:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>49.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:09:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>9.0</td>
+      <td>117526082</td>
+      <td>6735753</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>303141</td>
+      <td>303141</td>
+      <td>303141</td>
+      <td>20</td>
+      <td>855970</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 19:32:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>32.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>55.0</td>
+      <td>117526210</td>
+      <td>8628646</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>855970</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 14:08:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 16:29:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>29.0</td>
+      <td>117525949</td>
+      <td>5805521</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>854649</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:59:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>59.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-23 11:34:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>11.0</td>
+      <td>34.0</td>
+      <td>117525880</td>
+      <td>3873317</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1224</td>
+      <td>1224</td>
+      <td>1224</td>
+      <td>11763</td>
+      <td>852514</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 20:04:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>4.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 21:10:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>10.0</td>
+      <td>117525599</td>
+      <td>7762823</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>918951</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>0.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:02:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>2.0</td>
+      <td>117525603</td>
+      <td>5478043</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>867387</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 01:43:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>1.0</td>
+      <td>43.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 05:35:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>5.0</td>
+      <td>35.0</td>
+      <td>117525616</td>
+      <td>471899</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>20</td>
+      <td>857527</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:18:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>18.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:32:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>32.0</td>
+      <td>117525643</td>
+      <td>2605709</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>861017</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 14:43:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>14.0</td>
+      <td>43.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:05:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>5.0</td>
+      <td>117525644</td>
+      <td>8656700</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>907395</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 20:13:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>13.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 20:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>58.0</td>
+      <td>117525658</td>
+      <td>5833452</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>20</td>
+      <td>919522</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:28:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>28.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-23 02:30:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>2.0</td>
+      <td>30.0</td>
+      <td>117525689</td>
+      <td>5623233</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1247</td>
+      <td>1247</td>
+      <td>1247</td>
+      <td>20</td>
+      <td>864881</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 21:10:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>10.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 23:59:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>23.0</td>
+      <td>59.0</td>
+      <td>117525697</td>
+      <td>4395533</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>20</td>
+      <td>880561</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:20:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>20.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:01:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>1.0</td>
+      <td>117525923</td>
+      <td>5110456</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>853565</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 11:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>11.0</td>
+      <td>46.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 15:59:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>59.0</td>
+      <td>117525704</td>
+      <td>8949266</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>854649</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 10:08:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 14:13:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>14.0</td>
+      <td>13.0</td>
+      <td>117525750</td>
+      <td>6271044</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>20</td>
+      <td>912265</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 06:07:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 09:13:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>13.0</td>
+      <td>117525782</td>
+      <td>638374</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>855161</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 20:04:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>4.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 21:05:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>5.0</td>
+      <td>117525783</td>
+      <td>112802</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>20</td>
+      <td>906465</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:19:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>19.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 21:21:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>117525794</td>
+      <td>5563004</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>855991</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 04:07:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 06:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>117525798</td>
+      <td>7489095</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>20</td>
+      <td>1582177</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 04:45:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>4.0</td>
+      <td>45.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 10:19:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
+      <td>19.0</td>
+      <td>117525804</td>
+      <td>5085272</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>20</td>
+      <td>930164</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 10:12:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
+      <td>12.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 13:18:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>18.0</td>
+      <td>117525865</td>
+      <td>5389457</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>20</td>
+      <td>852137</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 09:45:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>45.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 10:16:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
+      <td>16.0</td>
+      <td>117525866</td>
+      <td>8367632</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>854031</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 02:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>Born Inside this Hospital</td>
+      <td>Newborn</td>
+      <td>2023-06-23 15:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>15.0</td>
+      <td>55.0</td>
+      <td>117525733</td>
+      <td>9626528</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1399</td>
+      <td>1399</td>
+      <td>1399</td>
       <td>29</td>
       <td>929626</td>
       <td>0</td>
@@ -719,64 +1448,31 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 17:40:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>17.0</td>
-      <td>40.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>58.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 19:38:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>38.0</td>
-      <td>152122316</td>
-      <td>566469</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>20</td>
-      <td>854649</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 21:05:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>2023-06-22 21:13:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>21.0</td>
-      <td>5.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 21:59:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>59.0</td>
-      <td>152125424</td>
-      <td>6996389</td>
+      <td>13.0</td>
+      <td>117526252</td>
+      <td>9626600</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>20</td>
-      <td>891912</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>852514</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -785,130 +1481,229 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:26:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>26.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-01 03:10:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>10.0</td>
-      <td>152122336</td>
-      <td>5470374</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>20</td>
-      <td>857476</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:11:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>11.0</td>
-      <td>Transfer from a Hospital (Different Facility)</td>
-      <td>Urgent</td>
-      <td>2026-01-07 10:58:00</td>
-      <td>2026.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 01:07:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>1.0</td>
       <td>7.0</td>
-      <td>10.0</td>
-      <td>58.0</td>
-      <td>152122374</td>
-      <td>6093150</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 02:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>23.0</td>
+      <td>117526269</td>
+      <td>317288</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>203936</td>
-      <td>203936</td>
-      <td>203936</td>
-      <td>26</td>
-      <td>467799</td>
-      <td>0</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>20</td>
+      <td>926866</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/23/22</td>
-      <td>2022-12-23 08:28:00</td>
-      <td>2022.0</td>
-      <td>12.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 20:24:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>24.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-23 00:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>23.0</td>
+      <td>0.0</td>
+      <td>23.0</td>
+      <td>117526274</td>
+      <td>3183520</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>20</td>
+      <td>898872</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>23.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:08:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
       <td>8.0</td>
+      <td>117526543</td>
+      <td>3187042</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>861020</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:02:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>2.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:20:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>20.0</td>
+      <td>117526545</td>
+      <td>1326427</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>1549940</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 13:12:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>12.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 13:49:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>49.0</td>
+      <td>117526571</td>
+      <td>9001319</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>857904</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:28:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
       <td>28.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
-      <td>Information Not Available</td>
-      <td>2022-12-23 23:59:00</td>
-      <td>2022.0</td>
-      <td>12.0</td>
-      <td>23.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>111576687</td>
-      <td>5030475</td>
+      <td>Emergency</td>
+      <td>2023-06-22 17:18:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>18.0</td>
+      <td>117526577</td>
+      <td>2817721</td>
       <td>Hospital Encounter</td>
-      <td>CT THERAPY PLAN VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>18254</td>
-      <td>18254</td>
-      <td>-1</td>
-      <td>152</td>
-      <td>510253</td>
-      <td>0</td>
-      <td>0</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>20</td>
+      <td>906045</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <td>02/13/24</td>
-      <td>2024-02-13 05:03:00</td>
-      <td>2024.0</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>5.0</td>
-      <td>3.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:44:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>44.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2024-02-13 06:19:00</td>
-      <td>2024.0</td>
-      <td>2.0</td>
-      <td>13.0</td>
+      <td>2023-06-22 16:15:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>19.0</td>
-      <td>126497294</td>
-      <td>8405356</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>15.0</td>
+      <td>117526588</td>
+      <td>6402943</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>85955</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>-1</td>
       <td>20</td>
-      <td>917319</td>
+      <td>1582457</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -917,559 +1712,493 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>02/03/25</td>
-      <td>2025-02-03 10:00:00</td>
-      <td>2025.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>10.0</td>
-      <td>0.0</td>
-      <td>Home</td>
-      <td>Information Not Available</td>
-      <td>2025-02-03 23:59:00</td>
-      <td>2025.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>139114318</td>
-      <td>10577414</td>
-      <td>Hospital Encounter</td>
-      <td>FHC WEIGHT CHECK</td>
-      <td>Clinic Visits- Virtual</td>
-      <td>443126</td>
-      <td>-1</td>
-      <td>-1</td>
-      <td>11795</td>
-      <td>-1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>06/30/24</td>
-      <td>2024-06-30 23:59:00</td>
-      <td>2024.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:35:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>30.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2024-06-30 23:59:00</td>
-      <td>2024.0</td>
-      <td>6.0</td>
-      <td>30.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>130915133</td>
-      <td>336323</td>
-      <td>Hospital Encounter</td>
-      <td>ROCEPHIN</td>
-      <td>Infusion Services</td>
-      <td>310216</td>
-      <td>310216</td>
-      <td>-1</td>
-      <td>165</td>
-      <td>1068646</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>11/01/23</td>
-      <td>2023-11-01 23:59:00</td>
-      <td>2023.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2023-11-01 23:59:00</td>
-      <td>2023.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>122789861</td>
-      <td>685275</td>
-      <td>Hospital Encounter</td>
-      <td>RXT10</td>
-      <td>Radiation Therapy</td>
-      <td>18254</td>
-      <td>18254</td>
-      <td>-1</td>
-      <td>151</td>
-      <td>906610</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>08/02/23</td>
-      <td>2023-08-02 07:56:00</td>
-      <td>2023.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
-      <td>7.0</td>
-      <td>56.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>35.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
-      <td>Information Not Available</td>
-      <td>2023-08-02 23:59:00</td>
+      <td>Emergency</td>
+      <td>2023-06-22 23:13:00</td>
       <td>2023.0</td>
-      <td>8.0</td>
-      <td>2.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>23.0</td>
-      <td>59.0</td>
-      <td>119030617</td>
-      <td>2845967</td>
-      <td>Hospital Encounter</td>
-      <td>CT THERAPY PLAN VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>18254</td>
-      <td>18254</td>
-      <td>-1</td>
-      <td>152</td>
-      <td>214192</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>05/25/23</td>
-      <td>2023-05-25 13:24:00</td>
-      <td>2023.0</td>
-      <td>5.0</td>
-      <td>25.0</td>
       <td>13.0</td>
-      <td>24.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2023-05-25 14:44:00</td>
-      <td>2023.0</td>
-      <td>5.0</td>
-      <td>25.0</td>
-      <td>14.0</td>
-      <td>44.0</td>
-      <td>114927004</td>
-      <td>5818575</td>
+      <td>117526597</td>
+      <td>4284508</td>
       <td>Hospital Encounter</td>
-      <td>NUCALA</td>
-      <td>Infusion</td>
-      <td>1091</td>
-      <td>1091</td>
-      <td>1091</td>
-      <td>165</td>
-      <td>857954</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>884406</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:22:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 19:11:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>11.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 20:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>0.0</td>
+      <td>117526615</td>
+      <td>9628085</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>867693</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:38:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>38.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:11:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>11.0</td>
+      <td>117526651</td>
+      <td>574125</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>861020</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:22:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
       <td>22.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-01 11:28:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>11.0</td>
-      <td>28.0</td>
-      <td>152123885</td>
-      <td>4214800</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>494425</td>
-      <td>27</td>
-      <td>930611</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>05/09/23</td>
-      <td>2023-05-09 07:03:00</td>
+      <td>2023-06-23 00:24:00</td>
       <td>2023.0</td>
-      <td>5.0</td>
-      <td>9.0</td>
-      <td>7.0</td>
-      <td>3.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2023-05-09 08:32:00</td>
-      <td>2023.0</td>
-      <td>5.0</td>
-      <td>9.0</td>
-      <td>8.0</td>
-      <td>32.0</td>
-      <td>115267001</td>
-      <td>3444419</td>
-      <td>Hospital Encounter</td>
-      <td>ORENCIA FOLLOW UP</td>
-      <td>Infusion</td>
-      <td>1097</td>
-      <td>1097</td>
-      <td>1097</td>
-      <td>165</td>
-      <td>915075</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>11/14/22</td>
-      <td>2022-11-14 13:15:00</td>
-      <td>2022.0</td>
-      <td>11.0</td>
-      <td>14.0</td>
-      <td>13.0</td>
-      <td>15.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Information Not Available</td>
-      <td>2022-11-14 23:59:00</td>
-      <td>2022.0</td>
-      <td>11.0</td>
-      <td>14.0</td>
+      <td>6.0</td>
       <td>23.0</td>
-      <td>59.0</td>
-      <td>108928045</td>
-      <td>5635828</td>
-      <td>Hospital Encounter</td>
-      <td>CT HEAD WO CONTRAST VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>9535</td>
-      <td>9535</td>
-      <td>-1</td>
-      <td>154</td>
-      <td>1586126</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:16:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>16.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-05 15:16:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>15.0</td>
-      <td>16.0</td>
-      <td>152126847</td>
-      <td>134998</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>37</td>
-      <td>854835</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>10/07/22</td>
-      <td>2022-10-07 11:01:00</td>
-      <td>2022.0</td>
-      <td>10.0</td>
-      <td>7.0</td>
-      <td>11.0</td>
-      <td>1.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Information Not Available</td>
-      <td>2022-10-07 23:59:00</td>
-      <td>2022.0</td>
-      <td>10.0</td>
-      <td>7.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>108673606</td>
-      <td>2705504</td>
-      <td>Hospital Encounter</td>
-      <td>CT THERAPY PLAN VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>18254</td>
-      <td>18254</td>
-      <td>-1</td>
-      <td>152</td>
-      <td>1542531</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>10/04/22</td>
-      <td>2022-10-04 11:24:00</td>
-      <td>2022.0</td>
-      <td>10.0</td>
-      <td>4.0</td>
-      <td>11.0</td>
+      <td>0.0</td>
       <td>24.0</td>
+      <td>117526539</td>
+      <td>4829569</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1247</td>
+      <td>1247</td>
+      <td>1247</td>
+      <td>20</td>
+      <td>894554</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/23/23</td>
+      <td>2023-06-23 01:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>1.0</td>
+      <td>58.0</td>
+      <td>Transfer from a Hospital (Different Facility)</td>
+      <td>Urgent</td>
+      <td>2023-06-27 13:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>27.0</td>
+      <td>13.0</td>
+      <td>46.0</td>
+      <td>117530006</td>
+      <td>527915</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18227</td>
+      <td>18227</td>
+      <td>18227</td>
+      <td>37</td>
+      <td>931014</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/24/23</td>
+      <td>2023-06-24 09:50:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>24.0</td>
+      <td>9.0</td>
+      <td>50.0</td>
+      <td>Born Inside this Hospital</td>
+      <td>Newborn</td>
+      <td>2023-06-26 11:45:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>26.0</td>
+      <td>11.0</td>
+      <td>45.0</td>
+      <td>117531828</td>
+      <td>9626610</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>1399</td>
+      <td>29</td>
+      <td>906981</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 00:42:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>0.0</td>
+      <td>42.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
-      <td>Information Not Available</td>
-      <td>2022-10-04 23:59:00</td>
-      <td>2022.0</td>
-      <td>10.0</td>
-      <td>4.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>108085468</td>
-      <td>7248216</td>
-      <td>Hospital Encounter</td>
-      <td>CT ANGIO CHEST ABDOMEN PELVIS W/WO CONTRAST VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>1243</td>
-      <td>1243</td>
-      <td>-1</td>
-      <td>154</td>
-      <td>1585828</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>09/20/22</td>
-      <td>2022-09-20 09:43:00</td>
-      <td>2022.0</td>
-      <td>9.0</td>
-      <td>20.0</td>
-      <td>9.0</td>
-      <td>43.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2022-09-20 23:59:00</td>
-      <td>2022.0</td>
-      <td>9.0</td>
-      <td>20.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>107518317</td>
-      <td>295563</td>
-      <td>Hospital Encounter</td>
-      <td>CT HEAD WO CONTRAST VT</td>
-      <td>Computerized Tomography- CT</td>
-      <td>7652</td>
-      <td>7652</td>
-      <td>-1</td>
-      <td>154</td>
-      <td>864709</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>09/06/22</td>
-      <td>2022-09-06 10:15:00</td>
-      <td>2022.0</td>
-      <td>9.0</td>
-      <td>6.0</td>
-      <td>10.0</td>
-      <td>15.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2022-09-06 23:59:00</td>
-      <td>2022.0</td>
-      <td>9.0</td>
+      <td>Urgent</td>
+      <td>2023-06-23 20:52:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
       <td>23.0</td>
-      <td>59.0</td>
-      <td>106081745</td>
-      <td>7841385</td>
+      <td>20.0</td>
+      <td>52.0</td>
+      <td>117533988</td>
+      <td>718816</td>
       <td>Hospital Encounter</td>
-      <td>ECHOCARDIOGRAM PEDIATRIC COMPLETE</td>
-      <td>Electrocardiogram</td>
-      <td>336175</td>
-      <td>336175</td>
-      <td>-1</td>
-      <td>52</td>
-      <td>855549</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1187</td>
+      <td>1187</td>
+      <td>1187</td>
+      <td>43</td>
+      <td>906402</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:55:00</td>
-      <td>2025.0</td>
+      <td>06/24/23</td>
+      <td>2023-06-24 20:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>24.0</td>
+      <td>20.0</td>
+      <td>58.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Urgent</td>
+      <td>2023-06-25 01:05:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>25.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>117538169</td>
+      <td>9714967</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>309834</td>
+      <td>309834</td>
+      <td>309834</td>
+      <td>30</td>
+      <td>855393</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/26/23</td>
+      <td>2023-06-26 09:27:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>26.0</td>
+      <td>9.0</td>
+      <td>27.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Elective</td>
+      <td>2023-06-26 12:50:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>26.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
+      <td>50.0</td>
+      <td>117543821</td>
+      <td>205717</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>2992</td>
+      <td>2992</td>
+      <td>6506</td>
+      <td>27</td>
+      <td>910699</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/29/23</td>
+      <td>2023-06-29 09:37:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>29.0</td>
+      <td>9.0</td>
+      <td>37.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Elective</td>
+      <td>2023-07-01 13:57:00</td>
+      <td>2023.0</td>
+      <td>7.0</td>
+      <td>1.0</td>
+      <td>13.0</td>
+      <td>57.0</td>
+      <td>117545661</td>
+      <td>12750</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6506</td>
+      <td>6506</td>
+      <td>2986</td>
+      <td>27</td>
+      <td>468646</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/29/23</td>
+      <td>2023-06-29 12:10:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>29.0</td>
+      <td>12.0</td>
+      <td>10.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Elective</td>
+      <td>2023-06-29 13:01:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>29.0</td>
+      <td>13.0</td>
+      <td>1.0</td>
+      <td>117561167</td>
+      <td>8991568</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>2984</td>
+      <td>2984</td>
+      <td>2984</td>
+      <td>11787</td>
+      <td>865051</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/27/23</td>
+      <td>2023-06-27 03:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>27.0</td>
+      <td>3.0</td>
       <td>55.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-01 05:01:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>1.0</td>
-      <td>152126900</td>
-      <td>550779</td>
+      <td>Elective</td>
+      <td>2023-06-28 14:24:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>28.0</td>
+      <td>14.0</td>
+      <td>24.0</td>
+      <td>117561242</td>
+      <td>8410897</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>20</td>
-      <td>918406</td>
+      <td>14694</td>
+      <td>14694</td>
+      <td>14694</td>
+      <td>11787</td>
+      <td>905122</td>
+      <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:50:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>06/23/23</td>
+      <td>2023-06-23 00:37:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>23.0</td>
-      <td>50.0</td>
+      <td>0.0</td>
+      <td>37.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-02 17:33:00</td>
-      <td>2026.0</td>
+      <td>2023-06-29 11:15:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>29.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>117561404</td>
+      <td>5615072</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>321925</td>
+      <td>321925</td>
+      <td>321925</td>
+      <td>12257</td>
+      <td>877672</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/23/23</td>
+      <td>2023-06-23 07:54:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>7.0</td>
+      <td>54.0</td>
+      <td>Born Inside this Hospital</td>
+      <td>Newborn</td>
+      <td>2023-06-26 16:14:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>26.0</td>
+      <td>16.0</td>
+      <td>14.0</td>
+      <td>117531612</td>
+      <td>9626609</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6479</td>
+      <td>6479</td>
+      <td>1399</td>
+      <td>29</td>
+      <td>906981</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 01:02:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>1.0</td>
       <td>2.0</td>
-      <td>17.0</td>
-      <td>33.0</td>
-      <td>152125799</td>
-      <td>163273</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1062</td>
-      <td>1062</td>
-      <td>1062</td>
-      <td>131</td>
-      <td>856486</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>01/03/23</td>
-      <td>2023-01-03 23:59:00</td>
-      <td>2023.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Information Not Available</td>
-      <td>2023-01-03 23:59:00</td>
-      <td>2023.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
-      <td>111055638</td>
-      <td>5305285</td>
-      <td>Hospital Encounter</td>
-      <td>RXT10</td>
-      <td>Radiation Therapy</td>
-      <td>2844</td>
-      <td>2844</td>
-      <td>-1</td>
-      <td>151</td>
-      <td>-1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 17:36:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>17.0</td>
-      <td>36.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 19:17:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>17.0</td>
-      <td>152122361</td>
-      <td>5641501</td>
+      <td>2023-06-22 01:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>117526516</td>
+      <td>111469</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>1071</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>-1</td>
       <td>20</td>
-      <td>918789</td>
+      <td>915009</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -1478,23 +2207,188 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:52:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>52.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 19:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>0.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 19:14:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>2023-06-22 20:08:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>20.0</td>
+      <td>8.0</td>
+      <td>117526508</td>
+      <td>6000669</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>468487</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:58:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>58.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-23 00:40:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>0.0</td>
+      <td>40.0</td>
+      <td>117526482</td>
+      <td>7717095</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>24823</td>
+      <td>20</td>
+      <td>894545</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:45:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>45.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:23:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>19.0</td>
+      <td>23.0</td>
+      <td>117526283</td>
+      <td>7246901</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>859011</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 13:59:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>59.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 15:14:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
       <td>14.0</td>
-      <td>152128943</td>
-      <td>7220893</td>
+      <td>117526290</td>
+      <td>9043526</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>916676</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>46.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:35:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>35.0</td>
+      <td>117526303</td>
+      <td>8935273</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>20</td>
+      <td>853564</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 18:14:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>14.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:25:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>25.0</td>
+      <td>117526323</td>
+      <td>7035994</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
@@ -1511,526 +2405,31 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:56:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>56.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 23:27:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>27.0</td>
-      <td>152122356</td>
-      <td>6906014</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>20</td>
-      <td>909057</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 05:46:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>5.0</td>
-      <td>46.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 08:38:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>8.0</td>
-      <td>38.0</td>
-      <td>152122309</td>
-      <td>278824</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>83664</td>
-      <td>11788</td>
-      <td>1610681</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 02:33:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:33:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
       <td>33.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 03:07:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>3.0</td>
-      <td>7.0</td>
-      <td>152122358</td>
-      <td>11090682</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>858513</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 02:02:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 04:37:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>4.0</td>
-      <td>37.0</td>
-      <td>152065569</td>
-      <td>360935</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>20</td>
-      <td>856743</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 01:41:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>1.0</td>
-      <td>41.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:07:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>7.0</td>
-      <td>152127577</td>
-      <td>8349473</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>858084</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 01:28:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>1.0</td>
-      <td>28.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 03:38:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>3.0</td>
-      <td>38.0</td>
-      <td>152066168</td>
-      <td>7018669</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>20</td>
-      <td>906253</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 01:10:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>1.0</td>
-      <td>10.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:23:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>23.0</td>
-      <td>152122329</td>
-      <td>768950</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>20</td>
-      <td>854706</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 01:02:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:48:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>48.0</td>
-      <td>152122504</td>
-      <td>5693811</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>85955</td>
-      <td>20</td>
-      <td>1596156</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 01:01:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-02 16:05:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>16.0</td>
-      <td>5.0</td>
-      <td>152066309</td>
-      <td>8623063</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>333152</td>
-      <td>333152</td>
-      <td>333152</td>
-      <td>34</td>
-      <td>855156</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 10:58:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>10.0</td>
-      <td>58.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2025-12-31 17:13:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>17.0</td>
-      <td>13.0</td>
-      <td>151987754</td>
-      <td>6377318</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>129190</td>
-      <td>129190</td>
-      <td>129190</td>
-      <td>121</td>
-      <td>858712</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:57:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>57.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 04:32:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>4.0</td>
-      <td>32.0</td>
-      <td>152068446</td>
-      <td>5692748</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>20</td>
-      <td>857472</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:45:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>45.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:27:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>27.0</td>
-      <td>152065172</td>
-      <td>5628715</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>439939</td>
-      <td>20</td>
-      <td>874196</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:30:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>30.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 12:05:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>5.0</td>
-      <td>152064328</td>
-      <td>2588554</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1076</td>
-      <td>1076</td>
-      <td>1076</td>
-      <td>33</td>
-      <td>858184</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:26:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>26.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 08:59:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>8.0</td>
-      <td>59.0</td>
-      <td>152126600</td>
-      <td>11101611</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>83664</td>
-      <td>83664</td>
-      <td>83664</td>
-      <td>11788</td>
-      <td>854596</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:06:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
+      <td>2023-06-22 18:12:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 16:15:00</td>
-      <td>2025.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>16.0</td>
-      <td>15.0</td>
-      <td>152066472</td>
-      <td>6127625</td>
+      <td>117526326</td>
+      <td>6970344</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>492005</td>
-      <td>492005</td>
-      <td>142177</td>
-      <td>21</td>
-      <td>855198</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:04:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:19:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>19.0</td>
-      <td>152126082</td>
-      <td>5289037</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>6561</td>
-      <td>6561</td>
+      <td>18298</td>
+      <td>18298</td>
       <td>-1</td>
       <td>20</td>
-      <td>857960</td>
+      <td>859011</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -2039,23 +2438,56 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:02:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 08:59:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>8.0</td>
+      <td>59.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 00:19:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>19.0</td>
-      <td>152071093</td>
-      <td>575277</td>
+      <td>2023-06-22 09:18:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>18.0</td>
+      <td>117526342</td>
+      <td>8379540</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>852232</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:50:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>50.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 18:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>55.0</td>
+      <td>117526343</td>
+      <td>2844262</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
@@ -2072,89 +2504,89 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/30/25</td>
-      <td>2025-12-30 23:59:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>23.0</td>
-      <td>59.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 02:32:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>32.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-04 12:36:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
+      <td>2023-06-22 04:07:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>4.0</td>
-      <td>12.0</td>
-      <td>36.0</td>
-      <td>152063592</td>
-      <td>2701905</td>
+      <td>7.0</td>
+      <td>117526346</td>
+      <td>7693649</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>34</td>
-      <td>854797</td>
-      <td>1</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>20</td>
+      <td>919725</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/30/25</td>
-      <td>2025-12-30 23:57:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>23.0</td>
-      <td>57.0</td>
-      <td>Born Inside this Hospital</td>
-      <td>Newborn</td>
-      <td>2026-01-17 17:55:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:32:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>32.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Elective</td>
+      <td>2023-06-22 17:25:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>17.0</td>
-      <td>17.0</td>
-      <td>55.0</td>
-      <td>152066412</td>
-      <td>11098754</td>
+      <td>25.0</td>
+      <td>117526353</td>
+      <td>8862765</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>233702</td>
-      <td>233702</td>
-      <td>233702</td>
-      <td>24</td>
-      <td>929626</td>
+      <td>14694</td>
+      <td>14694</td>
+      <td>14694</td>
+      <td>11787</td>
+      <td>-1</td>
       <td>0</td>
-      <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 00:49:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>49.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 13:14:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>14.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 00:51:00</td>
-      <td>2025.0</td>
+      <td>2023-06-22 15:12:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>0.0</td>
-      <td>51.0</td>
-      <td>152070059</td>
-      <td>10558673</td>
+      <td>117526386</td>
+      <td>8661418</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
@@ -2162,7 +2594,7 @@
       <td>6561</td>
       <td>-1</td>
       <td>20</td>
-      <td>1582658</td>
+      <td>915009</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -2171,196 +2603,97 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 11:09:00</td>
-      <td>2025.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 04:12:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>4.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>11.0</td>
-      <td>9.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
-      <td>Urgent</td>
-      <td>2026-01-01 13:39:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>13.0</td>
-      <td>39.0</td>
-      <td>152125231</td>
-      <td>11101692</td>
+      <td>Emergency</td>
+      <td>2023-06-22 06:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>55.0</td>
+      <td>117526392</td>
+      <td>199291</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>6854</td>
-      <td>6854</td>
-      <td>6854</td>
-      <td>30</td>
-      <td>857684</td>
-      <td>0</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>1071</td>
+      <td>20</td>
+      <td>467786</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 11:15:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>11.0</td>
-      <td>15.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:50:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>50.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Elective</td>
-      <td>2025-12-31 16:00:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>16.0</td>
-      <td>0.0</td>
-      <td>151148109</td>
-      <td>5449173</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18326</td>
-      <td>18326</td>
-      <td>18326</td>
-      <td>158</td>
-      <td>852125</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:07:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>7.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 19:52:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>52.0</td>
-      <td>152122384</td>
-      <td>10115492</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>917917</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:47:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>47.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-01 00:08:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>8.0</td>
-      <td>152122368</td>
-      <td>6748749</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>854649</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:42:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>42.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-03 11:45:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>11.0</td>
-      <td>45.0</td>
-      <td>152122340</td>
-      <td>5674192</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>32</td>
-      <td>912182</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:42:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>42.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 21:22:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
+      <td>2023-06-22 20:00:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>22.0</td>
-      <td>152126118</td>
-      <td>248132</td>
+      <td>20.0</td>
+      <td>0.0</td>
+      <td>117526399</td>
+      <td>7867582</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>24823</td>
-      <td>24823</td>
-      <td>24823</td>
+      <td>6506</td>
+      <td>6506</td>
+      <td>6506</td>
+      <td>27</td>
+      <td>909123</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:09:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-23 01:05:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>117526410</td>
+      <td>9626612</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1247</td>
+      <td>1247</td>
+      <td>1247</td>
       <td>20</td>
-      <td>1582146</td>
+      <td>862155</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -2369,328 +2702,97 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:41:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>41.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-01 12:30:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>152122359</td>
-      <td>492360</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>155139</td>
-      <td>155139</td>
-      <td>155139</td>
-      <td>32</td>
-      <td>931014</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:41:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>41.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 22:10:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 10:27:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>22.0</td>
       <td>10.0</td>
-      <td>152125758</td>
-      <td>297642</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>20</td>
-      <td>854471</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:09:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>9.0</td>
+      <td>27.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-04 17:04:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>4.0</td>
-      <td>17.0</td>
-      <td>4.0</td>
-      <td>152122333</td>
-      <td>327101</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>451377</td>
-      <td>451377</td>
-      <td>451377</td>
-      <td>22</td>
-      <td>906358</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:06:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
+      <td>2023-06-22 14:21:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-15 13:53:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>53.0</td>
-      <td>152122283</td>
-      <td>5877548</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>8184</td>
-      <td>931014</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 20:03:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>3.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2026-01-01 02:21:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>21.0</td>
-      <td>151770176</td>
-      <td>691405</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>2986</td>
-      <td>2986</td>
-      <td>2986</td>
-      <td>27</td>
-      <td>912053</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:51:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>51.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 20:43:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>43.0</td>
-      <td>152125449</td>
-      <td>566389</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>18298</td>
-      <td>20</td>
-      <td>856669</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:48:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>48.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 20:52:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>52.0</td>
-      <td>152122387</td>
-      <td>655457</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>24823</td>
-      <td>24823</td>
-      <td>24823</td>
-      <td>20</td>
-      <td>857523</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:40:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>40.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 20:12:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>12.0</td>
-      <td>152126372</td>
-      <td>5450464</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>1071</td>
-      <td>20</td>
-      <td>919913</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 18:57:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>18.0</td>
-      <td>57.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-07 14:48:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>7.0</td>
+      <td>22.0</td>
       <td>14.0</td>
-      <td>48.0</td>
-      <td>152122301</td>
-      <td>5764468</td>
+      <td>21.0</td>
+      <td>117526420</td>
+      <td>6960985</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>34</td>
-      <td>913307</td>
-      <td>1</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>20</td>
+      <td>858530</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:35:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>35.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 15:21:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>21.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 16:28:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>28.0</td>
+      <td>117526441</td>
+      <td>1426237</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>11788</td>
+      <td>885773</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 09:48:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>48.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Elective</td>
-      <td>2025-12-31 21:29:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>29.0</td>
-      <td>152122306</td>
-      <td>10612963</td>
+      <td>2023-06-22 10:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>10.0</td>
+      <td>46.0</td>
+      <td>117526451</td>
+      <td>8991568</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>345077</td>
-      <td>345077</td>
-      <td>345077</td>
+      <td>1154</td>
+      <td>1154</td>
+      <td>1154</td>
       <td>11787</td>
-      <td>855506</td>
+      <td>865051</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2699,97 +2801,31 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:35:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>35.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 01:43:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>1.0</td>
+      <td>43.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 20:39:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>20.0</td>
-      <td>39.0</td>
-      <td>152122324</td>
-      <td>9631991</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>923323</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:33:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>33.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 19:45:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>45.0</td>
-      <td>152130791</td>
-      <td>11045275</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>864481</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:31:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>31.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 19:36:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>36.0</td>
-      <td>152132072</td>
-      <td>674223</td>
+      <td>2023-06-22 03:16:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>3.0</td>
+      <td>16.0</td>
+      <td>117526464</td>
+      <td>344250</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
       <td>6561</td>
       <td>6561</td>
-      <td>-1</td>
+      <td>6561</td>
       <td>20</td>
-      <td>855088</td>
+      <td>931026</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -2798,29 +2834,29 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:25:00</td>
-      <td>2025.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 12:26:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>25.0</td>
+      <td>26.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 21:11:00</td>
-      <td>2025.0</td>
+      <td>2023-06-22 12:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>11.0</td>
-      <td>152126870</td>
-      <td>11101687</td>
+      <td>55.0</td>
+      <td>117526472</td>
+      <td>342708</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>24823</td>
-      <td>24823</td>
-      <td>24823</td>
+      <td>303141</td>
+      <td>303141</td>
+      <td>303141</td>
       <td>20</td>
       <td>852391</td>
       <td>1</td>
@@ -2831,263 +2867,428 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:23:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>23.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-08 14:20:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>8.0</td>
-      <td>14.0</td>
-      <td>20.0</td>
-      <td>152122331</td>
-      <td>212138</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>451101</td>
-      <td>451101</td>
-      <td>451101</td>
-      <td>131</td>
-      <td>931014</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 19:21:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>19.0</td>
-      <td>21.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-02 15:38:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>38.0</td>
-      <td>152122378</td>
-      <td>98101</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>156235</td>
-      <td>38</td>
-      <td>854766</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 23:10:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>23.0</td>
-      <td>10.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-01 00:27:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>27.0</td>
-      <td>152122365</td>
-      <td>8381902</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>852137</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/30/25</td>
-      <td>2025-12-30 23:41:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>23.0</td>
-      <td>41.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 02:20:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>2.0</td>
-      <td>20.0</td>
-      <td>152063601</td>
-      <td>536569</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>473858</td>
-      <td>20</td>
-      <td>856146</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 22:49:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 20:42:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
       <td>22.0</td>
+      <td>20.0</td>
+      <td>42.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 21:29:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>29.0</td>
+      <td>117526478</td>
+      <td>9601255</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>857472</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 02:42:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>42.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 05:29:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>5.0</td>
+      <td>29.0</td>
+      <td>117525585</td>
+      <td>197584</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>20</td>
+      <td>906461</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/23/23</td>
+      <td>2023-06-23 01:24:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>1.0</td>
+      <td>24.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-25 17:29:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>25.0</td>
+      <td>17.0</td>
+      <td>29.0</td>
+      <td>117561405</td>
+      <td>463256</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>1123</td>
+      <td>1123</td>
+      <td>1123</td>
+      <td>32</td>
+      <td>920320</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 16:47:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>47.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 17:22:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>22.0</td>
+      <td>117525581</td>
+      <td>727194</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>922118</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 21:19:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>21.0</td>
+      <td>19.0</td>
+      <td>Home</td>
+      <td>Emergency</td>
+      <td>2023-06-22 23:49:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>23.0</td>
+      <td>49.0</td>
+      <td>117525549</td>
+      <td>5765032</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>558195</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 14:26:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>14.0</td>
+      <td>26.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 16:10:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>10.0</td>
+      <td>117524208</td>
+      <td>664168</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>18298</td>
+      <td>20</td>
+      <td>1582663</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 11:46:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>11.0</td>
+      <td>46.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 13:29:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>13.0</td>
+      <td>29.0</td>
+      <td>117524260</td>
+      <td>37107</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>27105</td>
+      <td>20</td>
+      <td>858065</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 22:51:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>51.0</td>
+      <td>Home</td>
+      <td>Emergency</td>
+      <td>2023-06-23 04:30:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>23.0</td>
+      <td>4.0</td>
+      <td>30.0</td>
+      <td>117524282</td>
+      <td>5473882</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>24688</td>
+      <td>24688</td>
+      <td>24688</td>
+      <td>20</td>
+      <td>558195</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 17:38:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>17.0</td>
+      <td>38.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 19:12:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>12.0</td>
+      <td>117524288</td>
+      <td>1521444</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>16248</td>
+      <td>20</td>
+      <td>853559</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 02:17:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>2.0</td>
+      <td>17.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 06:51:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>51.0</td>
+      <td>117524302</td>
+      <td>6562197</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>6561</td>
+      <td>20</td>
+      <td>908274</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 06:04:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 07:42:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>7.0</td>
+      <td>42.0</td>
+      <td>117524350</td>
+      <td>709884</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>858047</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 09:20:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>20.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 12:01:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>12.0</td>
+      <td>1.0</td>
+      <td>117524357</td>
+      <td>5473882</td>
+      <td>Hospital Encounter</td>
+      <td>*Unspecified</td>
+      <td>*Unspecified</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>918406</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>06/22/23</td>
+      <td>2023-06-22 05:49:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>5.0</td>
       <td>49.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2026-01-02 14:00:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>14.0</td>
-      <td>0.0</td>
-      <td>152126001</td>
-      <td>596324</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>8184</td>
-      <td>907025</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 21:07:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>21.0</td>
-      <td>7.0</td>
-      <td>Transfer from Another Health Care Facility</td>
-      <td>Urgent</td>
-      <td>2026-01-05 15:19:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>5.0</td>
-      <td>15.0</td>
-      <td>19.0</td>
-      <td>152122264</td>
-      <td>62576</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>42</td>
-      <td>852733</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 14:52:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>14.0</td>
-      <td>52.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2026-01-06 13:18:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
+      <td>2023-06-22 13:49:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
+      <td>22.0</td>
       <td>13.0</td>
-      <td>18.0</td>
-      <td>152122379</td>
-      <td>7905060</td>
+      <td>49.0</td>
+      <td>117524390</td>
+      <td>9620839</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>452667</td>
-      <td>452667</td>
-      <td>452667</td>
-      <td>11763</td>
-      <td>919051</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>855865</td>
       <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:55:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>55.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Urgent</td>
-      <td>2025-12-31 13:52:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>13.0</td>
-      <td>52.0</td>
-      <td>152125778</td>
-      <td>10791003</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18592</td>
-      <td>18592</td>
-      <td>18592</td>
-      <td>11787</td>
-      <td>909144</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3095,29 +3296,29 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:52:00</td>
-      <td>2025.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 12:36:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
       <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>52.0</td>
+      <td>36.0</td>
       <td>Non-Health Care Facility Point of Origin</td>
       <td>Emergency</td>
-      <td>2025-12-31 13:32:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>13.0</td>
-      <td>32.0</td>
-      <td>152122352</td>
-      <td>10763106</td>
+      <td>2023-06-22 16:55:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>16.0</td>
+      <td>55.0</td>
+      <td>117524198</td>
+      <td>4237988</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>83664</td>
-      <td>83664</td>
-      <td>83664</td>
+      <td>129191</td>
+      <td>129191</td>
+      <td>129191</td>
       <td>11788</td>
       <td>855991</td>
       <td>1</td>
@@ -3128,233 +3329,35 @@
       <td>0</td>
     </tr>
     <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:47:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>47.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2026-01-01 21:31:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>21.0</td>
-      <td>31.0</td>
-      <td>152122255</td>
-      <td>6310728</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>439915</td>
-      <td>41</td>
-      <td>855344</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:44:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>44.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-31 15:05:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>15.0</td>
-      <td>5.0</td>
-      <td>152122502</td>
-      <td>3205663</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>17934</td>
-      <td>17934</td>
-      <td>17934</td>
-      <td>20</td>
-      <td>854649</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:39:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>39.0</td>
-      <td>Born Inside this Hospital</td>
-      <td>Newborn</td>
-      <td>2026-01-02 13:45:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>45.0</td>
-      <td>152122320</td>
-      <td>11101610</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>1233</td>
-      <td>1233</td>
-      <td>1233</td>
-      <td>29</td>
-      <td>929626</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:26:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>26.0</td>
-      <td>Clinic or Physician's Office</td>
-      <td>Emergency</td>
-      <td>2026-01-02 12:27:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>12.0</td>
-      <td>27.0</td>
-      <td>152122252</td>
-      <td>6365960</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>451377</td>
-      <td>451377</td>
-      <td>451377</td>
-      <td>32</td>
-      <td>853168</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:25:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>25.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Elective</td>
-      <td>2025-12-31 22:00:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>22.0</td>
-      <td>0.0</td>
-      <td>152047747</td>
-      <td>6845162</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>18326</td>
-      <td>18326</td>
-      <td>18326</td>
-      <td>158</td>
-      <td>852132</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/30/25</td>
-      <td>2025-12-30 19:23:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>19.0</td>
-      <td>23.0</td>
-      <td>Non-Health Care Facility Point of Origin</td>
-      <td>Emergency</td>
-      <td>2025-12-30 19:46:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>30.0</td>
-      <td>19.0</td>
-      <td>46.0</td>
-      <td>152063598</td>
-      <td>11098741</td>
-      <td>Hospital Encounter</td>
-      <td>*Unspecified</td>
-      <td>*Unspecified</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>73372</td>
-      <td>11788</td>
-      <td>858530</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>12/31/25</td>
-      <td>2025-12-31 12:20:00</td>
-      <td>2025.0</td>
-      <td>12.0</td>
-      <td>31.0</td>
-      <td>12.0</td>
-      <td>20.0</td>
-      <td>Transfer from a Hospital (Different Facility)</td>
-      <td>Urgent</td>
-      <td>2026-01-06 17:29:00</td>
-      <td>2026.0</td>
-      <td>1.0</td>
+      <td>06/22/23</td>
+      <td>2023-06-22 04:52:00</td>
+      <td>2023.0</td>
       <td>6.0</td>
-      <td>17.0</td>
-      <td>29.0</td>
-      <td>152124824</td>
-      <td>11101708</td>
+      <td>22.0</td>
+      <td>4.0</td>
+      <td>52.0</td>
+      <td>Non-Health Care Facility Point of Origin</td>
+      <td>Emergency</td>
+      <td>2023-06-22 07:07:00</td>
+      <td>2023.0</td>
+      <td>6.0</td>
+      <td>22.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>117524411</td>
+      <td>677674</td>
       <td>Hospital Encounter</td>
       <td>*Unspecified</td>
       <td>*Unspecified</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>24964</td>
-      <td>43</td>
-      <td>906402</td>
-      <td>0</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>18662</td>
+      <td>20</td>
+      <td>916591</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
